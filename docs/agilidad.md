@@ -10,20 +10,32 @@ En Comercial Nazareth, la regla de registrar un motivo en los ajustes manuales p
 
 ## 2. Prácticas aplicadas
 
-Se organiza el trabajo en seis tarjetas pequeñas, ordenadas por dependencia y prioridad. Cada una tiene criterios de aceptación y enlaces al repositorio. Los criterios se marcan después de contrastarlos con los archivos o registros correspondientes.
+La adaptación inicial se organizó en seis tarjetas pequeñas, ordenadas por dependencia y prioridad. Cada una tiene criterios de aceptación y enlaces al repositorio. Los criterios se marcan después de contrastarlos con los archivos o registros correspondientes.
 
-Se limita En curso a una tarjeta. Al revisar se comprueban el alcance, los identificadores, los enlaces y los resultados esperados. Una corrección devuelve la tarjeta a En curso. El cierre exige comprobar los criterios y conservar su evidencia.
+Se limita el trabajo a dos tarjetas en En curso y dos en En revisión. Al revisar se comprueban el alcance, los identificadores, los enlaces y los resultados esperados. Una corrección devuelve la tarjeta a En curso cuando hay capacidad. El cierre exige comprobar los criterios y conservar su evidencia.
 
 ## 3. Kanban en Trello
 
 [Tablero Comercial Nazareth — Kanban V2](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
 
-| Estado | Regla de trabajo |
-|---|---|
-| Por hacer | Tarjetas priorizadas y con criterios de aceptación definidos. |
-| En curso | Una tarjeta a la vez; la siguiente se toma cuando queda libre este estado. |
-| En revisión | Contraste del cambio con sus criterios, la trazabilidad y la base v1.1. |
-| Terminado | Criterios comprobados y evidencias enlazadas. |
+| Estado | Límite | Regla de trabajo |
+|---|---|---|
+| Por hacer | Sin límite de concurrencia | Tarjetas priorizadas y con criterios de aceptación definidos; trabajo no iniciado. |
+| En curso | 2 tarjetas | Iniciar una tarea cuando haya espacio y capacidad para atenderla. |
+| En revisión | 2 tarjetas | Contrastar el cambio con sus criterios, la trazabilidad y la base v1.1. |
+| Terminado | Sin límite de concurrencia | Criterios comprobados y evidencias enlazadas; trabajo cerrado. |
+
+### Reglas de concurrencia
+
+El límite de trabajo en curso (WIP) cuenta las tarjetas iniciadas que todavía no han terminado. Se permiten hasta cuatro en conjunto: dos En curso y dos En revisión. Los límites cuentan tarjetas, no personas; varios integrantes pueden colaborar en una misma tarea.
+
+1. Antes de iniciar o mover una tarjeta, comprobar que la etapa de destino tenga espacio. Una etapa llena no recibe otra tarjeta.
+2. Priorizar terminar, revisar o desbloquear trabajo existente antes de iniciar más tareas.
+3. Una tarjeta bloqueada permanece en su etapa y cuenta dentro del límite. Registrar el impedimento y la acción necesaria para resolverlo.
+4. Si una revisión requiere una corrección, devolver la tarjeta a En curso solo cuando haya espacio. Mientras tanto permanece En revisión y sigue contando en su límite.
+5. Mover una tarjeta a Terminado cuando cumpla sus criterios de aceptación y tenga la evidencia enlazada.
+
+El control se realiza manualmente antes de cada movimiento. Los límites son visibles en los nombres de las columnas y las reglas completas están en la [tarjeta de Kanban](https://trello.com/c/2DwyXuC1). Se revisan según la capacidad del equipo y la acumulación observada en cada etapa.
 
 | Prioridad | Tarjeta |
 |---|---|
@@ -49,6 +61,8 @@ La [tarjeta de PRU-019](https://trello.com/c/AfN5TOU6) registra el siguiente rec
 Antes de trasladar la tarjeta a Terminado se contrastó el texto guardado con sus tres criterios de aceptación. El [commit de PRU-019](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/commit/9db12638a8ab1ed74c3ac9144542fda12ab3ad56) contiene el escenario, y el [commit de la matriz](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/commit/347a84070c39863c5a8ce8a0af36fa1f7f4f8d7e) vincula la prueba con REQ-015.
 
 La configuración del tablero también tiene su registro en la [tarjeta de prioridades y criterios](https://trello.com/c/RfHgERQk), con sus tres comprobaciones completas. Las tarjetas conservan sus movimientos y listas de aceptación como evidencia del trabajo.
+
+La actualización de las reglas de concurrencia se registra en dos tarjetas: [documentar las reglas](https://trello.com/c/rCAaVxzg) y [aplicar los límites en Trello](https://trello.com/c/loubRJnf). Durante esta actualización hubo dos tarjetas En curso al mismo tiempo, dentro del máximo acordado. Sus criterios permiten contrastar los límites del documento con las columnas y las reglas del tablero.
 
 ## Resultados de la adaptación
 
