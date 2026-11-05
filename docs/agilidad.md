@@ -1,5 +1,7 @@
 # Adaptación ágil de Comercial Nazareth (V2)
 
+Este documento recoge las prácticas y el flujo de la base v2.0.1. Sus métricas corresponden a los cinco requisitos seleccionados para esa adaptación. El [SRS completo](SRS.md) reúne el catálogo de la entrega final.
+
 La adaptación parte de la [línea base v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.1) del [laboratorio de gestión del cambio y trazabilidad](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7). Conserva los cinco requisitos, sus casos de uso y el modelo de clases.
 
 ## 1. Validez del trabajo con agilidad
@@ -83,4 +85,8 @@ El [reporte v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7
 
 ## Integración
 
-Los cuatro archivos de la adaptación se agrupan en el [PR #1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/1). La comparación del PR y los commits enlazados permiten contrastar la prueba, su trazabilidad y la documentación con la base v1.1.
+El [PR #1 de V2](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/1) reúne la adaptación ágil inicial: README, documentación de agilidad, matriz y pruebas, incluida PRU-019.
+
+El [PR #2 de V2](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/2) incorpora las reglas de concurrencia: dos tarjetas en En curso y dos en En revisión, con reglas para etapas llenas, bloqueos, correcciones y cierre.
+
+El [PR #1 del repositorio Definitivo](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/1) integra los historiales del laboratorio 7 y V2.0.1. Los PR y commits de origen conservan las evidencias de cada etapa.
