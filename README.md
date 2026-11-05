@@ -1,9 +1,8 @@
-
-# Comercial Nazareth: laboratorio 7
+# Comercial Nazareth: entrega definitiva
 
 Grupo 4 · Ingeniería de Software
 
-Gestión del cambio y trazabilidad de requisitos aplicada al sistema de gestión comercial y portal de clientes de Comercial Nazareth.
+Sistema de gestión comercial y portal de clientes de Comercial Nazareth. Esta entrega integra la sesión 12 y la evolución hasta v2.0.1 e incorpora el SRS completo, los ocho casos de uso y el flujo del proceso crítico CU-006: Gestionar inventario.
 
 ## Integrantes
 
@@ -15,17 +14,33 @@ Gestión del cambio y trazabilidad de requisitos aplicada al sistema de gestión
 | Cesar Jeremin Alonso Chuquimango Reyes | N00480808 |
 | Alonso Castillo Davalos | N00491764 |
 
+
 ## Documentos
 
-El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculación del cliente y mantenimiento de productos.
+| Documento | Contenido |
+|---|---|
+| [SRS completo](docs/SRS.md) | Quince requisitos funcionales, seis no funcionales y ocho reglas del negocio. |
+| [Casos de uso](docs/CU.md) | Ocho casos de uso, sus actores, flujos y excepciones. |
+| [Proceso crítico](docs/proceso-critico.md) | Justificación y flujo de CU-006, con los controles del ajuste manual. |
+| [Convención de identificadores](docs/convencion-ids.md) | Identificadores y correspondencia con el proyecto de origen. |
+| [Matriz de trazabilidad](matrices/trazabilidad.md) | Relaciones de los cinco requisitos seleccionados para el laboratorio. |
+| [Pruebas](pruebas/pruebas.md) | Nueve casos de prueba del alcance seleccionado. |
+| [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencias del flujo de V2. |
+| [Reporte v1.1](reportes/reporte-v1.1.md) | Comparación histórica entre v1.0 y v1.1. |
 
-- [Convención de identificadores](docs/convencion-ids.md).
-- [Requisitos seleccionados](docs/SRS.md).
-- [Casos de uso](docs/CU.md).
-- [Diagrama de clases](modelos/clases.png), con su fuente editable [clases.drawio](modelos/clases.drawio).
-- [Pruebas documentadas](pruebas/pruebas.md).
-- [Matriz de trazabilidad](matrices/trazabilidad.md).
-- [Reporte de trazabilidad v1.1](reportes/reporte-v1.1.md).
+## Modelos
+
+| Modelo | Visualización | Fuente editable |
+|---|---|---|
+| Casos de uso del sistema | [PNG](modelos/casos-de-uso.png) | Diagrama conservado del proyecto de origen. |
+| Clases del alcance seleccionado | [PNG](modelos/clases.png) | [draw.io](modelos/clases.drawio) |
+| Flujo de CU-006: Gestionar inventario | [PNG](modelos/actividad-gestionar-inventario.png) | [draw.io](modelos/actividad-gestionar-inventario.drawio) · [XML](modelos/actividad-gestionar-inventario.xml) |
+
+## Alcance de la trazabilidad
+
+El SRS reúne el catálogo completo del proyecto. La matriz, el modelo de clases y las nueve pruebas conservan el alcance de REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015. La cobertura del 100 % corresponde a esos cinco requisitos seleccionados.
+
+CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserva el ajuste, el motivo y el stock en una misma transacción. El flujo de esta entrega desarrolla ese proceso y su relación con la reposición.
 
 ## Sesión 12
 
@@ -33,26 +48,27 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Riesgos de CR-001](matrices/riesgos-cr-001.md): probabilidad, impacto y respuesta.
 - [Reporte de verificación de trazabilidad](reportes/trazabilidad-s12.md).
 
-Para actualizar el reporte después de cambiar algún artefacto, ejecutar desde la raíz del repositorio:
+Para actualizar el reporte, ejecutar desde la raíz del repositorio:
 
 ```bash
 python3 scripts/verificar-trazabilidad.py
 ```
 
-El script coteja los IDs de la matriz con SRS, casos de uso, diagrama editable y pruebas. La cobertura indica vínculos documentados; no representa ejecución de pruebas.
+El verificador contrasta los cinco requisitos y los cuatro casos de uso del alcance seleccionado con el SRS completo, el modelo de clases y las nueve pruebas. La cobertura se calcula sobre ese alcance y el reporte identifica también el tamaño del catálogo completo.
 
-## Adaptación ágil V2
+## Kanban
 
-- [Documentación de la adaptación ágil](docs/agilidad.md).
-- [Tablero Kanban en Trello](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
-- [PR #1: adaptación ágil y prueba PRU-019](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/1).
-- [PR #2: actualización de las reglas de concurrencia](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/2).
-
-La adaptación incorpora PRU-019 para el fallo al guardar un ajuste manual de REQ-015. Se mantienen los cinco requisitos y se amplía la documentación a nueve pruebas, con una cobertura por requisitos del 100 %.
+[Tablero de Comercial Nazareth](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2). En curso y En revisión admiten un máximo de dos tarjetas cada una. Las reglas contemplan capacidad, bloqueos, correcciones y criterios de cierre.
 
 ## Antecedentes
 
-- [Repositorio original del laboratorio 7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7).
-- [Documentación de la línea base v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.0).
-- [Documentación de la línea base v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.1).
-- [Reporte histórico de trazabilidad v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/blob/v1.1/reportes/reporte-v1.1.md).
+- [Integración histórica de Lab7 y V2.0.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/1).
+- [Adaptación ágil inicial](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/1).
+- [Reglas de concurrencia](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/2).
+- [Línea base v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.0).
+- [Línea base v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.1).
+- [Reporte histórico v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/blob/v1.1/reportes/reporte-v1.1.md).
+- [Base v2.0.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v2.0.1).
+- [Repositorio del proyecto de origen](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth).
+- [Repositorio del laboratorio 7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7).
+- [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7/issues/5).

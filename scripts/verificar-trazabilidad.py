@@ -7,6 +7,8 @@ import sys
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ALCANCE_REQUISITOS = {"REQ-001", "REQ-002", "REQ-007", "REQ-010", "REQ-015"}
+ALCANCE_CASOS_USO = {"CU-001", "CU-002", "CU-003", "CU-006"}
 
 
 def read(path):
@@ -29,6 +31,7 @@ def refs(value, prefix):
 def main():
     sources = {
         "REQ": first_column_ids("docs/SRS.md", r"REQ-\d{3}"),
+        "RNF": first_column_ids("docs/SRS.md", r"RNF-\d{3}"),
         "CU": first_column_ids("docs/CU.md", r"CU-\d{3}"),
         "CLS": re.findall(r'<mxCell id="(CLS-[A-Za-z]+)"', read("modelos/clases.drawio")),
         "PRU": first_column_ids("pruebas/pruebas.md", r"PRU-\d{3}"),
@@ -49,17 +52,23 @@ def main():
     for kind, ids in sources.items():
         if len(ids) != len(set(ids)):
             errors.append(f"Hay IDs {kind} repetidos en el artefacto de origen.")
-    missing = set(sources["REQ"]) - set(matrix_reqs)
-    extra = set(matrix_reqs) - set(sources["REQ"])
+    missing = ALCANCE_REQUISITOS - set(matrix_reqs)
+    extra = set(matrix_reqs) - ALCANCE_REQUISITOS
+    unknown_reqs = (ALCANCE_REQUISITOS | set(matrix_reqs)) - set(sources["REQ"])
     if missing:
-        errors.append("Requisitos sin fila: " + ", ".join(sorted(missing)))
+        errors.append("Requisitos del alcance sin fila: " + ", ".join(sorted(missing)))
     if extra:
-        errors.append("Requisitos sin SRS: " + ", ".join(sorted(extra)))
+        errors.append("Requisitos fuera del alcance: " + ", ".join(sorted(extra)))
+    if unknown_reqs:
+        errors.append("Requisitos sin SRS: " + ", ".join(sorted(unknown_reqs)))
 
     for i, kind in enumerate(("CU", "CLS", "PRU"), start=1):
         linked = set().union(*(row[i] for row in rows)) if rows else set()
         unknown = linked - set(sources[kind])
-        unlinked = set(sources[kind]) - linked
+        expected = ALCANCE_CASOS_USO if kind == "CU" else set(sources[kind])
+        unlinked = expected - linked
+        if kind == "CU" and linked - ALCANCE_CASOS_USO:
+            errors.append("CU fuera del alcance: " + ", ".join(sorted(linked - ALCANCE_CASOS_USO)))
         if unknown:
             errors.append(f"{kind} sin artefacto: " + ", ".join(sorted(unknown)))
         if unlinked:
@@ -73,21 +82,23 @@ def main():
                        and classes <= set(sources["CLS"])
                        and tests <= set(sources["PRU"]))
                   for _, cus, classes, tests in rows)
-    total = len(sources["REQ"])
+    total = len(ALCANCE_REQUISITOS)
     lines = [
         "# Reporte de trazabilidad (sesión 12)", "",
         "Generado con `python3 scripts/verificar-trazabilidad.py` a partir de los artefactos del repositorio.", "",
-        f"Requisitos con CU, CLS y PRU: **{covered}/{total}**.",
-        f"IDs de origen: {total} REQ, {len(sources['CU'])} CU, {len(sources['CLS'])} CLS y {len(sources['PRU'])} PRU.",
+        f"Requisitos del alcance seleccionado con CU, CLS y PRU: **{covered}/{total}**.",
+        f"Cobertura del alcance seleccionado: **{covered / total * 100:.0f} %**.",
+        f"Catálogo completo: {len(sources['REQ'])} requisitos funcionales, {len(sources['RNF'])} no funcionales y {len(sources['CU'])} casos de uso.",
+        f"Artefactos del alcance seleccionado: {total} REQ, {len(ALCANCE_CASOS_USO)} CU, {len(sources['CLS'])} CLS y {len(sources['PRU'])} PRU.",
         "", "| Requisito | Casos de uso | Clases | Pruebas |", "|---|---|---|---|",
     ]
     for req, cus, classes, tests in rows:
         lines.append("| " + " | ".join((req, ", ".join(sorted(cus)),
                                        ", ".join(sorted(classes)), ", ".join(sorted(tests)))) + " |")
     lines += ["", "## Comprobación bidireccional", ""]
-    lines += ["Sin vínculos de ID faltantes o sobrantes." if not errors else "Inconsistencias encontradas:"]
+    lines += ["Referencias del alcance seleccionado verificadas en ambos sentidos." if not errors else "Inconsistencias encontradas:"]
     lines += [f"- {error}" for error in errors]
-    lines += ["", "La cobertura mide relaciones entre documentos. Las pruebas están documentadas; este reporte no acredita su ejecución.", ""]
+    lines += ["", "La cobertura expresa la correspondencia documental de los cinco requisitos seleccionados.", ""]
     output = ROOT / "reportes/trazabilidad-s12.md"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text("\n".join(lines), encoding="utf-8")
