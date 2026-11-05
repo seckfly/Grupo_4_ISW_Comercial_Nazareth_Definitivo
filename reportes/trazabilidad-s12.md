@@ -1,22 +1,18 @@
 # Resumen de trazabilidad (sesión 12)
 
-Síntesis documental de la matriz de trazabilidad y de los artefactos del repositorio.
+La [matriz](../matrices/trazabilidad.md) relaciona el catálogo del [SRS](../docs/SRS.md) con los [casos de uso](../docs/CU.md), el modelo disponible y las pruebas documentadas. La [hoja de cálculo](trazabilidad-s12.xlsx) recalcula los totales al modificar los vínculos.
 
-Requisitos del alcance seleccionado con CU, CLS y PRU: **5/5**.
-Cobertura del alcance seleccionado: **100 %**.
-Catálogo completo: 15 requisitos funcionales, 6 no funcionales y 8 casos de uso.
-Artefactos del alcance seleccionado: 5 REQ, 4 CU, 6 CLS y 9 PRU.
+| Medida | Resultado |
+|---|---:|
+| Requisitos funcionales con prueba documentada | 15 de 15 |
+| Requisitos no funcionales con prueba documentada | 6 de 6 |
+| Casos de uso documentados | 8 |
+| Clases del modelo de la línea base | 6 |
+| Requisitos funcionales vinculados con ese modelo | 5 de 15 |
+| Pruebas documentadas | 25 |
 
-| Requisito | Casos de uso | Clases | Pruebas |
-|---|---|---|---|
-| REQ-001 | CU-001 | CLS-DetalleVenta, CLS-MovimientoInventario, CLS-Producto, CLS-Venta | PRU-001, PRU-003 |
-| REQ-002 | CU-006 | CLS-Producto | PRU-002 |
-| REQ-007 | CU-001, CU-003 | CLS-Cliente, CLS-ListaProductos, CLS-Producto | PRU-007 |
-| REQ-010 | CU-001, CU-002 | CLS-Cliente, CLS-Venta | PRU-004 |
-| REQ-015 | CU-006 | CLS-MovimientoInventario, CLS-Producto | PRU-016, PRU-017, PRU-018, PRU-019 |
+Las nueve pruebas de [pruebas.md](../pruebas/pruebas.md) conservan la línea base. Las otras dieciséis se documentan en [pruebas-catalogo.md](../pruebas/pruebas-catalogo.md). Las PRU describen escenarios y resultados esperados.
 
-## Lectura en ambos sentidos
+## Recorrido de CR-001
 
-Desde un requisito se siguen sus casos de uso, clases y pruebas documentadas; desde una prueba se vuelve al requisito que la justifica.
-
-La cobertura expresa la correspondencia documental de los cinco requisitos seleccionados.
+REQ-015 → CU-006 → CLS-Producto y CLS-MovimientoInventario → PRU-016, PRU-017, PRU-018 y PRU-019. La matriz registra CR-001 en la columna «Último CR». El recorrido inverso parte de una PRU y vuelve a REQ-015 mediante la columna Requisito de los documentos de pruebas.

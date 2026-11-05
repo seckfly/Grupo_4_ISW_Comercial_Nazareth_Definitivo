@@ -23,8 +23,10 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. Esta e
 | [Casos de uso](docs/CU.md) | Ocho casos de uso, sus actores, flujos y excepciones. |
 | [Proceso crítico](docs/proceso-critico.md) | Justificación y flujo de CU-006, con los controles del ajuste manual. |
 | [Convención de identificadores](docs/convencion-ids.md) | Identificadores y correspondencia con el proyecto de origen. |
-| [Matriz de trazabilidad](matrices/trazabilidad.md) | Relaciones de los cinco requisitos seleccionados para el laboratorio. |
-| [Pruebas](pruebas/pruebas.md) | Nueve casos de prueba del alcance seleccionado. |
+| [Matriz de trazabilidad](matrices/trazabilidad.md) | Vínculos de los 15 requisitos funcionales y los 6 no funcionales. |
+| [Pruebas de la línea base](pruebas/pruebas.md) | Nueve casos documentados. |
+| [Pruebas del catálogo ampliado](pruebas/pruebas-catalogo.md) | Dieciséis casos documentados a partir del SRS. |
+| [Hoja de trazabilidad](reportes/trazabilidad-s12.xlsx) | Cobertura calculada a partir de los vínculos de la matriz. |
 | [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencias del flujo de V2. |
 | [Reporte v1.1](reportes/reporte-v1.1.md) | Comparación histórica entre v1.0 y v1.1. |
 
@@ -38,7 +40,7 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. Esta e
 
 ## Alcance de la trazabilidad
 
-El SRS reúne el catálogo completo del proyecto. La matriz, el modelo de clases y las nueve pruebas conservan el alcance de REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015. La cobertura del 100 % corresponde a esos cinco requisitos seleccionados.
+La [matriz](matrices/trazabilidad.md) incluye los 15 requisitos funcionales y los 6 no funcionales del SRS. Cada uno se vincula con al menos una prueba documentada en los dos archivos de `pruebas/`. El modelo de clases mantiene las seis clases de la línea base y se enlaza con los cinco requisitos que cubre; los demás requisitos se trazan mediante su caso de uso o ámbito y su prueba.
 
 CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserva el ajuste, el motivo y el stock en una misma transacción. El flujo de esta entrega desarrolla ese proceso y su relación con la reposición.
 
@@ -46,7 +48,7 @@ CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserv
 
 - [Impacto de CR-001](matrices/impacto-cr-001.md): alcance, tiempo y calidad/costo.
 - [Riesgos de CR-001](matrices/riesgos-cr-001.md): probabilidad, impacto y respuesta.
-- [Resumen de trazabilidad](reportes/trazabilidad-s12.md).
+- [Resumen de trazabilidad](reportes/trazabilidad-s12.md) y [hoja de cálculo](reportes/trazabilidad-s12.xlsx): catálogo completo y cobertura documental.
 
 ## Kanban
 
