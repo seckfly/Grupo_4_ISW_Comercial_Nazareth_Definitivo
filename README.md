@@ -1,3 +1,4 @@
+
 # Comercial Nazareth: laboratorio 7
 
 Grupo 4 · Ingeniería de Software
@@ -39,3 +40,19 @@ python3 scripts/verificar-trazabilidad.py
 ```
 
 El script coteja los IDs de la matriz con SRS, casos de uso, diagrama editable y pruebas. La cobertura indica vínculos documentados; no representa ejecución de pruebas.
+
+## Adaptación ágil V2
+
+- [Documentación de la adaptación ágil](docs/agilidad.md).
+- [Tablero Kanban en Trello](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
+- [PR #1: adaptación ágil y prueba PRU-019](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/1).
+- [PR #2: actualización de las reglas de concurrencia](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/pull/2).
+
+La adaptación incorpora PRU-019 para el fallo al guardar un ajuste manual de REQ-015. Se mantienen los cinco requisitos y se amplía la documentación a nueve pruebas, con una cobertura por requisitos del 100 %.
+
+## Antecedentes
+
+- [Repositorio original del laboratorio 7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7).
+- [Documentación de la línea base v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.0).
+- [Documentación de la línea base v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/tree/v1.1).
+- [Reporte histórico de trazabilidad v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Lab7_V2/blob/v1.1/reportes/reporte-v1.1.md).
