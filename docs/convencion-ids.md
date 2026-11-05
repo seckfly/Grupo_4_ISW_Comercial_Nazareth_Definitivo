@@ -41,4 +41,4 @@ El número de cada requisito se conserva al normalizar su formato. Los identific
 
 ## Uso en la trazabilidad
 
-El recorrido documentado va de REQ a CU, CLS y PRU. El alcance seleccionado comprende REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015, los casos CU-001, CU-002, CU-003 y CU-006, las seis clases del modelo y las nueve pruebas. La matriz permite recorrer los vínculos en ambos sentidos dentro de ese alcance. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.
+La [matriz](../matrices/trazabilidad.md) incluye REQ-001 a REQ-015 y RNF-001 a RNF-006. Vincula cada requisito con las pruebas documentadas; para los requisitos funcionales registra el caso de uso o ámbito del SRS y las clases cuando figuran en el modelo de la línea base. La columna Requisito de los documentos de pruebas permite el recorrido inverso. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.

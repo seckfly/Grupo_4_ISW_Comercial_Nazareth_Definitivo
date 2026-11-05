@@ -78,11 +78,11 @@ Para RNF-001 se consideran diez operaciones equivalentes, todas bajo el umbral. 
 
 El cálculo de descuentos debe coincidir entre la interfaz y el servicio. En los ajustes manuales de CU-006 se aplica REQ-015: motivo válido, conservación del historial y guardado conjunto del ajuste, el motivo y el stock. Ante un fallo se conserva el estado anterior al intento.
 
-## Trazabilidad del alcance seleccionado
+## Trazabilidad del catálogo
 
-La [matriz](../matrices/trazabilidad.md) relaciona REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015 con sus casos de uso, clases y nueve [casos de prueba](../pruebas/pruebas.md). Su cobertura del 100 % se calcula sobre esos cinco requisitos seleccionados.
+La [matriz](../matrices/trazabilidad.md) reúne los quince requisitos funcionales y los seis no funcionales. Diez requisitos funcionales se vinculan con los [casos de uso](CU.md). Los otros cinco se identifican por su ámbito en el SRS. Las pruebas se documentan en [la línea base](../pruebas/pruebas.md) y en [el catálogo ampliado](../pruebas/pruebas-catalogo.md). Los 21 requisitos tienen una prueba asociada.
 
-El [diagrama general](../modelos/casos-de-uso.png) representa los ocho casos de uso. El [modelo de clases](../modelos/clases.png) corresponde al alcance seleccionado de ventas, catálogo, clientes e inventario. El [proceso crítico](proceso-critico.md) desarrolla CU-006.
+El [diagrama de casos de uso](../modelos/casos-de-uso.png) representa los ocho CU. El [modelo de clases](../modelos/clases.png) conserva el diseño de ventas, catálogo, clientes e inventario de la línea base. El [proceso crítico](proceso-critico.md) desarrolla CU-006.
 
 ## Fuentes del catálogo
 
