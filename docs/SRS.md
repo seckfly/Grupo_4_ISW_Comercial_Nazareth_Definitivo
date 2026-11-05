@@ -80,7 +80,7 @@ El cálculo de descuentos debe coincidir entre la interfaz y el servicio. En los
 
 ## Trazabilidad del catálogo
 
-La [matriz](../matrices/trazabilidad.md) reúne los quince requisitos funcionales y los seis no funcionales. Diez requisitos funcionales se vinculan con los [casos de uso](CU.md). Los otros cinco se identifican por su ámbito en el SRS. Las pruebas se documentan en [la línea base](../pruebas/pruebas.md) y en [el catálogo ampliado](../pruebas/pruebas-catalogo.md). Los 21 requisitos tienen una prueba asociada.
+La [matriz](../matrices/trazabilidad.md) reúne los quince requisitos funcionales y los seis no funcionales. Diez requisitos funcionales se vinculan con los [casos de uso](CU.md). Los otros cinco se identifican por su ámbito en el SRS. Las nueve pruebas de [la línea base](../pruebas/pruebas.md) se vinculan con cinco requisitos funcionales. La matriz identifica los vínculos disponibles para el catálogo completo.
 
 El [diagrama de casos de uso](../modelos/casos-de-uso.png) representa los ocho CU. El [modelo de clases](../modelos/clases.png) conserva el diseño de ventas, catálogo, clientes e inventario de la línea base. El [proceso crítico](proceso-critico.md) desarrolla CU-006.
 
