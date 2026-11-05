@@ -8,7 +8,7 @@ Se selecciona este proceso por su relación directa con la exactitud del inventa
 
 ## Actor y relaciones
 
-Humberto actúa como Responsable de almacén desde su sesión administrativa. CU-006 atiende REQ-002 y REQ-015. Cuando el stock está por debajo del mínimo y decide reponer, asume el rol de Responsable de compras y ejecuta CU-008. La orden no aumenta el stock; la recepción de CU-009 registra las entradas de mercadería.
+Humberto actúa como Responsable de almacén desde su sesión administrativa. CU-006 atiende RF-002 y RF-015. Cuando el stock está por debajo del mínimo y decide reponer, asume el rol de Responsable de compras y ejecuta CU-008. La orden no aumenta el stock; la recepción de CU-009 registra las entradas de mercadería.
 
 ## Controles del ajuste
 
@@ -17,7 +17,7 @@ Humberto actúa como Responsable de almacén desde su sesión administrativa. CU
 - El ajuste, el motivo y el stock se confirman juntos; un fallo conserva el estado anterior.
 - El historial conserva los ajustes anteriores con sus motivos.
 
-Las salidas por ventas mantienen CU-001. El registro del motivo corresponde a los ajustes manuales de REQ-015.
+Las salidas por ventas mantienen CU-001. El registro del motivo corresponde a los ajustes manuales de RF-015.
 
 ## Diagrama de flujo
 
@@ -33,7 +33,7 @@ Los tres archivos representan el mismo flujo. La consulta conserva las reglas de
 
 | Requisito | Caso de uso | Clases del alcance seleccionado | Pruebas |
 |---|---|---|---|
-| REQ-002 | CU-006 | CLS-Producto | PRU-002 |
-| REQ-015 | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 |
+| RF-002 | CU-006 | CLS-Producto | PRU-002 |
+| RF-015 | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 |
 
 PRU-016 describe ajustes con motivos válidos y conservación del historial. PRU-017 y PRU-018 cubren motivos vacíos o compuestos solo por espacios. PRU-019 define el resultado esperado ante un fallo durante el guardado del ajuste.

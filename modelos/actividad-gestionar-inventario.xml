@@ -7,7 +7,7 @@
         <mxCell id="title" value="CU-006: Gestionar inventario" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;text;strokeColor=none;fillColor=none;fontSize=28;fontStyle=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="40" y="25" width="1220" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="Humberto Dávalos · Responsable de almacén · REQ-002 y REQ-015" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;text;strokeColor=none;fillColor=none;fontSize=17;align=left;" vertex="1" parent="1">
+        <mxCell id="subtitle" value="Humberto Dávalos · Responsable de almacén · RF-002 y RF-015" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;text;strokeColor=none;fillColor=none;fontSize=17;align=left;" vertex="1" parent="1">
           <mxGeometry x="40" y="75" width="1220" height="35" as="geometry" />
         </mxCell>
         <mxCell id="start" value="" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;shape=ellipse;fillColor=#25364a;strokeColor=#25364a;" vertex="1" parent="1">
