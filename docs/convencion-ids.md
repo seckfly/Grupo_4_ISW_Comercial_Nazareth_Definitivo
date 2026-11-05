@@ -41,4 +41,4 @@ El número de cada requisito se conserva al normalizar su formato. Los identific
 
 ## Uso en la trazabilidad
 
-El recorrido documentado va de REQ a CU, CLS y PRU. El alcance seleccionado comprende REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015, los casos CU-001, CU-002, CU-003 y CU-006, las seis clases del modelo y las nueve pruebas. El verificador comprueba las referencias en ambos sentidos dentro de ese alcance. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.
+El recorrido documentado va de REQ a CU, CLS y PRU. El alcance seleccionado comprende REQ-001, REQ-002, REQ-007, REQ-010 y REQ-015, los casos CU-001, CU-002, CU-003 y CU-006, las seis clases del modelo y las nueve pruebas. La matriz permite recorrer los vínculos en ambos sentidos dentro de ese alcance. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.
