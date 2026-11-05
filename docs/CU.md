@@ -1,17 +1,17 @@
 # Casos de uso de Comercial Nazareth
 
-Los identificadores conservan la numeración del proyecto de origen. Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado utiliza el portal.
+Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado utiliza el portal.
 
 | ID | Caso de uso | Actor | Requisitos relacionados |
 |---|---|---|---|
-| CU-001 | Registrar venta | Vendedor | REQ-001; utiliza REQ-007 y, cuando el comprador se identifica, REQ-010 |
-| CU-002 | Vincular cliente a la venta | Vendedor | REQ-010 |
-| CU-003 | Consultar catálogo | Cliente registrado, Vendedor y Responsable de compras | REQ-007 |
-| CU-004 | Gestionar promociones | Administrador | REQ-008 |
-| CU-005 | Reservar producto (Separación en tienda) | Cliente registrado | REQ-007, REQ-009 |
-| CU-006 | Gestionar inventario | Responsable de almacén | REQ-002, REQ-015 |
-| CU-008 | Registrar orden de compra | Responsable de compras | REQ-003, REQ-004, REQ-007 |
-| CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | REQ-004, REQ-005 |
+| CU-001 | Registrar venta | Vendedor | RF-001; utiliza RF-007 y, cuando el comprador se identifica, RF-010 |
+| CU-002 | Vincular cliente a la venta | Vendedor | RF-010 |
+| CU-003 | Consultar catálogo | Cliente registrado, Vendedor y Responsable de compras | RF-007 |
+| CU-004 | Gestionar promociones | Administrador | RF-008 |
+| CU-005 | Reservar producto (Separación en tienda) | Cliente registrado | RF-007, RF-009 |
+| CU-006 | Gestionar inventario | Responsable de almacén | RF-002, RF-015 |
+| CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 |
+| CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-004, RF-005 |
 
 ![Diagrama general de casos de uso](../modelos/casos-de-uso.png)
 
@@ -54,7 +54,7 @@ CU-001 incluye CU-003. CU-002 extiende CU-001 cuando el comprador se identifica 
 
 Actor: Vendedor, rol desempeñado por Humberto Dávalos.
 
-Requisito relacionado: REQ-010.
+Requisito relacionado: RF-010.
 
 Relación: extiende CU-001 cuando el comprador se identifica como cliente registrado. La vinculación es opcional y no impide guardar la venta.
 
@@ -82,7 +82,7 @@ Postcondición sin vinculación: la venta continúa sin cliente asociado y puede
 
 Actores: Cliente registrado, Vendedor y Responsable de compras.
 
-Requisito relacionado: REQ-007.
+Requisito relacionado: RF-007.
 
 Relación: CU-001, CU-005 y CU-008 incluyen CU-003.
 
@@ -110,7 +110,7 @@ Postcondición de éxito: el actor ve los resultados con precio y disponibilidad
 
 Actor: Administrador, rol desempeñado por Humberto Dávalos.
 
-Requisito relacionado: REQ-008.
+Requisito relacionado: RF-008.
 
 Precondiciones: sesión administrativa activa y producto existente.
 
@@ -138,7 +138,7 @@ Postcondición de éxito: la campaña conserva el tipo, el valor, la vigencia y 
 
 Actor: Cliente registrado.
 
-Requisitos relacionados: REQ-007 y REQ-009.
+Requisitos relacionados: RF-007 y RF-009.
 
 Relación: incluye CU-003.
 
@@ -167,7 +167,7 @@ Postcondición de éxito: queda registrada una solicitud con sus productos, impo
 
 Actor: Responsable de almacén, rol desempeñado por Humberto Dávalos.
 
-Requisitos relacionados: REQ-002 y REQ-015.
+Requisitos relacionados: RF-002 y RF-015.
 
 Relación: CU-008 puede extender CU-006 cuando el stock está por debajo del mínimo y Humberto decide reponer.
 
@@ -207,7 +207,7 @@ El [proceso crítico](proceso-critico.md) presenta el flujo de CU-006 y sus cont
 
 Actor: Responsable de compras, rol desempeñado por Humberto Dávalos.
 
-Requisitos relacionados: REQ-003, REQ-004 y REQ-007.
+Requisitos relacionados: RF-003, RF-004 y RF-007.
 
 Relaciones: incluye CU-003; puede extender CU-006 con stock por debajo del mínimo y decisión de reponer.
 
@@ -237,7 +237,7 @@ Postcondición de éxito: la orden conserva proveedor, productos, cantidades, co
 
 Actor: Responsable de compras, rol desempeñado por Humberto Dávalos.
 
-Requisitos relacionados: REQ-004 y REQ-005.
+Requisitos relacionados: RF-004 y RF-005.
 
 Precondiciones: sesión administrativa activa, orden pendiente con saldo por recibir, mercadería verificada físicamente y referencia de recepción no utilizada.
 
@@ -261,6 +261,3 @@ Precondiciones: sesión administrativa activa, orden pendiente con saldo por rec
 
 Postcondición de éxito: queda guardada una recepción sin duplicados y el stock aumenta por lo efectivamente recibido. La orden permanece pendiente si hay saldo o queda recibida cuando se completa. Una orden con entradas registradas no se anula; las devoluciones y la reversión de recepciones quedan fuera de este alcance.
 
-## Correspondencia documental
-
-Los casos de uso proceden del modelo y del informe de la Evaluación Parcial. CU-001, CU-002 y la consulta de catálogo conservan las reglas de la base v2.0.1. CU-006 incorpora CR-001 y los controles de inventario de la especificación del proyecto. La [convención de identificadores](convencion-ids.md) relaciona los códigos del origen con los empleados aquí.
