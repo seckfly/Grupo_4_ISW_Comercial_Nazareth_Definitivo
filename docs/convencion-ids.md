@@ -41,4 +41,4 @@ El número de cada requisito se conserva al normalizar su formato. Los identific
 
 ## Uso en la trazabilidad
 
-La [matriz](../matrices/trazabilidad.md) incluye REQ-001 a REQ-015 y RNF-001 a RNF-006. Vincula cada requisito con las pruebas documentadas; para los requisitos funcionales registra el caso de uso o ámbito del SRS y las clases cuando figuran en el modelo de la línea base. La columna Requisito de los documentos de pruebas permite el recorrido inverso. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.
+La [matriz](../matrices/trazabilidad.md) incluye REQ-001 a REQ-015 y RNF-001 a RNF-006. Registra el caso de uso o ámbito del SRS y, cuando existen, vínculos con clases del modelo y pruebas de la línea base. La columna Requisito de los documentos de pruebas permite el recorrido inverso. Los identificadores conservan su significado tras CR-001 y la incorporación del catálogo completo.

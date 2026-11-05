@@ -25,7 +25,6 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. Esta e
 | [Convención de identificadores](docs/convencion-ids.md) | Identificadores y correspondencia con el proyecto de origen. |
 | [Matriz de trazabilidad](matrices/trazabilidad.md) | Vínculos de los 15 requisitos funcionales y los 6 no funcionales. |
 | [Pruebas de la línea base](pruebas/pruebas.md) | Nueve casos documentados. |
-| [Pruebas del catálogo ampliado](pruebas/pruebas-catalogo.md) | Dieciséis casos documentados a partir del SRS. |
 | [Hoja de trazabilidad](reportes/trazabilidad-s12.xlsx) | Cobertura calculada a partir de los vínculos de la matriz. |
 | [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencias del flujo de V2. |
 | [Reporte v1.1](reportes/reporte-v1.1.md) | Comparación histórica entre v1.0 y v1.1. |
@@ -40,7 +39,7 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. Esta e
 
 ## Alcance de la trazabilidad
 
-La [matriz](matrices/trazabilidad.md) incluye los 15 requisitos funcionales y los 6 no funcionales del SRS. Cada uno se vincula con al menos una prueba documentada en los dos archivos de `pruebas/`. El modelo de clases mantiene las seis clases de la línea base y se enlaza con los cinco requisitos que cubre; los demás requisitos se trazan mediante su caso de uso o ámbito y su prueba.
+La [matriz](matrices/trazabilidad.md) enumera los 15 requisitos funcionales y los 6 no funcionales del SRS. Las nueve pruebas de [pruebas.md](pruebas/pruebas.md) se vinculan con cinco requisitos funcionales. El modelo de clases conserva seis clases de la línea base y también se vincula con esos cinco requisitos. La hoja de cálculo muestra las relaciones registradas y los totales resultantes.
 
 CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserva el ajuste, el motivo y el stock en una misma transacción. El flujo de esta entrega desarrolla ese proceso y su relación con la reposición.
 
