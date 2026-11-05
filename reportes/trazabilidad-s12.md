@@ -1,6 +1,6 @@
-# Reporte de trazabilidad (sesión 12)
+# Resumen de trazabilidad (sesión 12)
 
-Generado con `python3 scripts/verificar-trazabilidad.py` a partir de los artefactos del repositorio.
+Síntesis documental de la matriz de trazabilidad y de los artefactos del repositorio.
 
 Requisitos del alcance seleccionado con CU, CLS y PRU: **5/5**.
 Cobertura del alcance seleccionado: **100 %**.
@@ -15,8 +15,8 @@ Artefactos del alcance seleccionado: 5 REQ, 4 CU, 6 CLS y 9 PRU.
 | REQ-010 | CU-001, CU-002 | CLS-Cliente, CLS-Venta | PRU-004 |
 | REQ-015 | CU-006 | CLS-MovimientoInventario, CLS-Producto | PRU-016, PRU-017, PRU-018, PRU-019 |
 
-## Comprobación bidireccional
+## Lectura en ambos sentidos
 
-Referencias del alcance seleccionado verificadas en ambos sentidos.
+Desde un requisito se siguen sus casos de uso, clases y pruebas documentadas; desde una prueba se vuelve al requisito que la justifica.
 
 La cobertura expresa la correspondencia documental de los cinco requisitos seleccionados.

@@ -46,15 +46,7 @@ CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserv
 
 - [Impacto de CR-001](matrices/impacto-cr-001.md): alcance, tiempo y calidad/costo.
 - [Riesgos de CR-001](matrices/riesgos-cr-001.md): probabilidad, impacto y respuesta.
-- [Reporte de verificación de trazabilidad](reportes/trazabilidad-s12.md).
-
-Para actualizar el reporte, ejecutar desde la raíz del repositorio:
-
-```bash
-python3 scripts/verificar-trazabilidad.py
-```
-
-El verificador contrasta los cinco requisitos y los cuatro casos de uso del alcance seleccionado con el SRS completo, el modelo de clases y las nueve pruebas. La cobertura se calcula sobre ese alcance y el reporte identifica también el tamaño del catálogo completo.
+- [Resumen de trazabilidad](reportes/trazabilidad-s12.md).
 
 ## Kanban
 
