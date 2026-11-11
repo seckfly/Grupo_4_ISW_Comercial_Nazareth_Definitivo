@@ -227,7 +227,8 @@ Precondiciones: sesión administrativa activa y productos existentes en el catá
 |---|---|
 | Se inicia CU-008 desde CU-006 | Conservar el contexto del producto revisado y completar la orden. |
 | Humberto necesita reponer sin una alerta | Iniciar CU-008 directamente. |
-| Humberto ya compró y recibió la mercadería de una tienda mayorista | Usar «Registrar compra en mayorista», completar los datos del comercio, las cantidades, los costos y la referencia de recepción. El sistema ejecuta CU-008 y CU-009 al guardar, en una sola transacción. La compra queda recibida y el stock aumenta por las cantidades ingresadas. |
+| Humberto ya compró y recibió la mercadería de una tienda mayorista | En «Registrar compra», indicar que la mercadería ya fue recibida y completar la referencia. Al guardar, el sistema ejecuta CU-008 y CU-009 en una sola transacción. La compra queda recibida y el stock aumenta por las cantidades ingresadas. |
+| La compra incluye un producto nuevo | Darlo de alta desde la línea con stock inicial cero. El producto queda seleccionado y se conserva el formulario de compra. Las unidades se ingresan al confirmar la recepción. |
 | Faltan datos obligatorios del proveedor | Solicitar completarlos antes de guardar. |
 | La cantidad o el costo no es positivo | Rechazar la línea y señalar el campo. |
 | La orden no contiene líneas | Impedir el guardado. |
