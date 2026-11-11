@@ -27,8 +27,8 @@ Precondiciones: Humberto tiene una sesión administrativa activa. Los productos 
 2. El sistema comprueba que la venta tenga productos, que las cantidades sean positivas y que exista stock suficiente.
 3. Si el comprador se identifica como cliente registrado, Humberto lo vincula mediante CU-002. En caso contrario, continúa sin cliente asociado.
 4. Humberto elige efectivo, Yape o Plin. El sistema calcula el total con los precios del servicio y muestra los campos del método elegido.
-5. Humberto registra el monto recibido en efectivo o la referencia de la operación digital.
-6. El sistema valida el monto recibido en efectivo o la referencia de la operación digital, según el método elegido, y calcula el vuelto cuando corresponde.
+5. Humberto ingresa el monto recibido. Si elige Yape o Plin, comprueba el abono y marca la confirmación manual.
+6. El sistema valida el monto. Para Yape y Plin, exige que coincida con el total a dos decimales y que Humberto haya confirmado la comprobación. Para efectivo, calcula el vuelto cuando corresponde.
 7. El sistema guarda la cabecera y el detalle de la venta, registra la salida de inventario y descuenta el stock en una misma transacción.
 8. El sistema confirma el guardado y muestra el identificador de la venta.
 
@@ -38,10 +38,10 @@ Precondiciones: Humberto tiene una sesión administrativa activa. Los productos 
 |---|---|
 | El comprador no se identifica como cliente registrado | Continuar sin vincular una cuenta. |
 | El monto recibido en efectivo supera el total | Calcular y mostrar el vuelto. |
-| Se selecciona Yape o Plin | Registrar la referencia digital sin atribuirle una confirmación bancaria automática. |
+| Se selecciona Yape o Plin | Mostrar el QR de demostración y solicitar el importe recibido y la comprobación manual del abono. |
 | La venta está vacía o contiene cantidades no válidas | Solicitar la corrección antes de continuar. |
 | Un producto no tiene stock suficiente | Identificar el producto y rechazar el intento actual. Humberto puede iniciar una nueva selección. |
-| El monto recibido o la referencia digital no son válidos para el método elegido | Solicitar la corrección antes de guardar. |
+| El monto recibido no es válido o falta comprobar el abono digital | Solicitar la corrección antes de guardar. |
 | Falla el guardado | Revertir la transacción y mostrar que la venta no fue confirmada. |
 
 Postcondición de éxito: quedan guardados la venta, su detalle y el movimiento de salida, con el stock actualizado.

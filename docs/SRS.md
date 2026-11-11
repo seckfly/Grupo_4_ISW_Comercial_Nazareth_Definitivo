@@ -10,7 +10,7 @@ Esta especificación reúne quince requisitos funcionales, seis no funcionales y
 
 Se incluyen ventas, consulta de productos y existencias, mantenimiento de productos e inventario, promociones, solicitudes de separación, consultas del portal de clientes, administración de accesos, resúmenes de ventas, órdenes de compra y recepción de mercadería.
 
-La solución contempla una interfaz React/Vite, un servicio Express y una base MySQL. La venta admite efectivo, Yape y Plin; el registro de una referencia digital identifica el pago indicado por Humberto y no constituye una confirmación bancaria automática.
+La solución contempla una interfaz React/Vite, un servicio Express y una base MySQL. La venta admite efectivo, Yape y Plin; para Yape y Plin, Humberto comprueba el abono, ingresa el importe recibido y confirma manualmente el pago.
 
 Quedan fuera del alcance la contabilidad integral, la facturación electrónica, los pagos a proveedores, la apertura y el cierre formal de caja, las notificaciones automáticas y la detección de stock mediante cámaras. El proveedor se comunica con Humberto fuera de la aplicación y no tiene credenciales de acceso.
 
@@ -67,7 +67,7 @@ Para RNF-001 se consideran diez operaciones equivalentes, todas bajo el umbral. 
 
 | ID | Regla |
 |---|---|
-| BR-001 | Yape y Plin se registran como método de pago. El código de operación no confirma el pago bancario. |
+| BR-001 | Yape y Plin se registran como método de pago. Humberto ingresa el importe exacto a dos decimales y confirma que comprobó el abono. El QR de demostración no solicita dinero ni confirma un pago. |
 | BR-002 | La venta usa el precio consultado por el servicio y redondea a dos decimales. El cálculo de descuentos debe coincidir entre interfaz y backend. |
 | BR-003 | Una venta puede registrarse sin cliente asociado. |
 | BR-004 | Una orden de compra no aumenta el stock. El incremento ocurre al confirmar la recepción. |
