@@ -10,7 +10,7 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 | RF-002 | Consultar existencias y alertas | CU-006 | CLS-Producto | PRU-002 | — |
 | RF-003 | Identificar proveedor de la orden | CU-008 | — | PRU-005 | — |
 | RF-004 | Registrar orden de compra | CU-008, CU-009 | — | PRU-006 | — |
-| RF-005 | Registrar recepción | CU-009 | — | PRU-008 | — |
+| RF-005 | Registrar recepción | CU-009 y CU-008 (recepción inmediata) | — | PRU-008 | — |
 | RF-006 | Acceder según perfil | Acceso transversal | — | PRU-009 | — |
 | RF-007 | Consultar catálogo | CU-003; también CU-001, CU-005 y CU-008 | CLS-Producto, CLS-ListaProductos, CLS-Cliente | PRU-007 | — |
 | RF-008 | Gestionar promociones | CU-004 | — | PRU-010 | — |
@@ -37,10 +37,10 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 
 | ID | Regla verificada | Pruebas documentadas |
 |---|---|---|
-| BR-001 | Pagos Yape y Plin con referencia | PRU-020 |
+| BR-001 | Yape y Plin con importe exacto y comprobación manual | PRU-020 |
 | BR-002 | Precio y redondeo; descuento concordante | PRU-003, PRU-010 |
 | BR-003 | Venta sin cliente asociado | PRU-004 |
-| BR-004 | Orden sin aumento de stock; entrada al recibir | PRU-006, PRU-008 |
+| BR-004 | El stock aumenta al confirmar la recepción | PRU-006, PRU-008 |
 | BR-005 | Separación sin venta ni descuento de stock | PRU-011 |
 | BR-006 | Alerta por umbral y decisión de reponer | PRU-002, PRU-006 |
 | BR-007 | Proveedor guardado en la orden | PRU-005 |

@@ -36,7 +36,7 @@ Los cuatro roles internos corresponden al perfil administrativo de Humberto. El 
 | RF-002 | Consultar existencias y alertas | El sistema debe mostrar las existencias y señalar los productos activos cuyo stock sea menor o igual al mínimo configurado. | CU-006 |
 | RF-003 | Identificar proveedor de la orden | El sistema debe guardar razón social, RUC y teléfono del proveedor dentro de la orden, sin exigir un catálogo independiente. | CU-008 |
 | RF-004 | Registrar orden de compra | El sistema debe conservar proveedor, productos, cantidades, costos y estado pendiente, recibida o anulada; calcular el total estimado. | CU-008 |
-| RF-005 | Registrar recepción | El sistema debe registrar cantidades recibidas de una orden pendiente, aumentar el stock y crear movimientos de entrada en una transacción. | CU-009 |
+| RF-005 | Registrar recepción | El sistema debe guardar las cantidades recibidas, aumentar el stock y crear los movimientos de entrada en una transacción. La recepción puede registrarse contra una orden pendiente o al guardar una compra con mercadería ya recibida. | CU-009 y CU-008 (recepción inmediata) |
 | RF-006 | Acceder según perfil | El sistema debe permitir inicio y cierre de sesión para el perfil administrativo y el cliente registrado. | Acceso transversal |
 | RF-007 | Consultar catálogo | El sistema debe permitir buscar productos por nombre y categoría, mostrar su precio y disponibilidad, y guardar favoritos y listas en el portal del cliente registrado. | CU-003 |
 | RF-008 | Gestionar promociones | El sistema debe crear, editar, pausar, activar y eliminar campañas por producto, con descuento, vigencia y estado. | CU-004 |
@@ -70,7 +70,7 @@ Para RNF-001 se consideran diez operaciones equivalentes, todas bajo el umbral. 
 | BR-001 | Yape y Plin se registran como método de pago. Humberto ingresa el importe exacto a dos decimales y confirma que comprobó el abono. El QR de demostración no solicita dinero ni confirma un pago. |
 | BR-002 | La venta usa el precio consultado por el servicio y redondea a dos decimales. El cálculo de descuentos debe coincidir entre interfaz y backend. |
 | BR-003 | Una venta puede registrarse sin cliente asociado. |
-| BR-004 | Una orden de compra no aumenta el stock. El incremento ocurre al confirmar la recepción. |
+| BR-004 | El stock aumenta al confirmar la recepción. Una orden pendiente conserva las existencias. Si la mercadería ya llegó, la compra y la recepción pueden guardarse juntas. |
 | BR-005 | Una solicitud de separación no confirma una venta ni garantiza el bloqueo de existencias. |
 | BR-006 | La alerta muestra stock menor o igual al mínimo. CU-008 puede extender CU-006 cuando el stock está por debajo del mínimo y Humberto decide reponer. Si el stock equivale al mínimo, se muestra la alerta, pero esa condición por sí sola no activa CU-008. |
 | BR-007 | Los datos del proveedor se guardan en la orden. El proveedor no tiene credenciales ni un caso de uso independiente. |

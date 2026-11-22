@@ -8,7 +8,7 @@ Se selecciona este proceso por su relación directa con la exactitud del inventa
 
 ## Actor y relaciones
 
-Humberto actúa como Responsable de almacén desde su sesión administrativa. CU-006 atiende RF-002 y RF-015. Cuando el stock está por debajo del mínimo y decide reponer, asume el rol de Responsable de compras y ejecuta CU-008. La orden no aumenta el stock; la recepción de CU-009 registra las entradas de mercadería.
+Humberto actúa como Responsable de almacén desde su sesión administrativa. CU-006 atiende RF-002 y RF-015. Cuando el stock está por debajo del mínimo y decide reponer, asume el rol de Responsable de compras y ejecuta CU-008. El diagrama muestra la ruta de la orden pendiente, que conserva el stock. Si la mercadería ya llegó, Humberto puede registrar la compra y la recepción juntas. La entrada de stock corresponde a CU-009 en ambos casos.
 
 ## Controles del ajuste
 
