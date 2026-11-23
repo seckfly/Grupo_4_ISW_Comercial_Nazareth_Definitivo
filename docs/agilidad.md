@@ -10,13 +10,13 @@ En Comercial Nazareth, la regla de registrar un motivo en los ajustes manuales p
 
 ## 2. Prácticas aplicadas
 
-El trabajo mostrado en el tablero se organizó en seis tarjetas, ordenadas por dependencia y prioridad. Cada una tiene criterios de aceptación y enlaces al repositorio. Los criterios se marcan después de contrastarlos con los archivos o registros correspondientes.
+El tablero reúne 16 tarjetas ordenadas por versión. Cada tarjeta indica el criterio de aceptación y enlaza el documento, Issue o pull request que respalda el trabajo registrado.
 
 Se limita el trabajo a dos tarjetas en En curso y dos en En revisión. Al revisar se comprueban el alcance, los identificadores, los enlaces y los resultados esperados. Una corrección devuelve la tarjeta a En curso cuando hay capacidad. El cierre exige comprobar los criterios y conservar su evidencia.
 
 ## 3. Kanban en Trello
 
-[Tablero Kanban de Comercial Nazareth](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
+[Tablero Kanban de Comercial Nazareth · Miércoles](https://trello.com/b/pG8s0HQ8/comercial-nazareth-mi%C3%A9rcoles).
 
 | Estado | Límite | Regla de trabajo |
 |---|---|---|
@@ -37,33 +37,16 @@ El [CR-002](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo
 | Una revisión requiere correcciones | La tarjeta vuelve a En curso cuando hay espacio. Mientras espera, cuenta en En revisión. |
 | Se cumplen los criterios de aceptación | La tarjeta pasa a Terminado con la evidencia enlazada. |
 
-El control se realiza manualmente antes de cada movimiento. Los límites son visibles en los nombres de las columnas y las reglas completas están en la [tarjeta de Kanban](https://trello.com/c/2DwyXuC1). Se revisan según la capacidad del equipo y la acumulación observada en cada etapa.
+El equipo comprueba el espacio de destino antes de mover una tarjeta. Los límites se muestran en los nombres de las columnas y los criterios se detallan en la [tarjeta del CR-002](https://trello.com/c/M6iVRmxI).
 
-| Prioridad | Tarjeta |
+## 4. Seguimiento por versión
+
+| Versión | Tarjetas de referencia |
 |---|---|
-| 1 | [Preparar base y alcance ágil](https://trello.com/c/DrED8dls) |
-| 2 | [Definir prioridades y criterios de aceptación](https://trello.com/c/RfHgERQk) |
-| 3 | [Aplicar Kanban y registrar el recorrido](https://trello.com/c/2DwyXuC1) |
-| 4 | [Comprobar fallo al guardar un ajuste](https://trello.com/c/AfN5TOU6) |
-| 5 | [Actualizar matriz y comprobar cobertura](https://trello.com/c/dH7rxo0F) |
-| 6 | [Documentar y revisar la adaptación](https://trello.com/c/gYZf9zeq) |
+| v1.0 | [Línea base de requisitos y trazabilidad](https://trello.com/c/239z6Ncn) |
+| v1.1 | [CR-001 · Ajustes de inventario](https://trello.com/c/O96QYyu5) y [escenarios de prueba del ajuste](https://trello.com/c/I3ru0jJN) |
+| v2.0 | [CR-002 · Límites de Kanban](https://trello.com/c/M6iVRmxI), [CR-003 · Recepción de compras](https://trello.com/c/0V5FRS9T), [CR-004 · Comprobación de pagos](https://trello.com/c/g6LkA2D5) y [cierre de la entrega](https://trello.com/c/59h7x7Eh) |
 
-## 4. Flujo real aplicado
+Las tarjetas de Terminado registran trabajo respaldado por artefactos del repositorio. Por ejemplo, la [tarjeta de PRU-019](https://trello.com/c/pIMnZu8w) remite al escenario de fallo de guardado de un ajuste manual. La [prueba](../pruebas/pruebas.md) describe el resultado esperado y la [matriz](../matrices/trazabilidad.md) la vincula con RF-015.
 
-El incremento documenta PRU-019 para el fallo de guardado de un ajuste manual de RF-015 y CU-006. La prueba parte de stock 10, un historial previo y un motivo válido. Tras un fallo antes de confirmar la transacción, exige stock 10, conservación de los registros anteriores y ausencia de movimientos o motivos guardados parcialmente.
-
-La [tarjeta de PRU-019](https://trello.com/c/AfN5TOU6) registra el siguiente recorrido:
-
-| Movimiento | Acción realizada |
-|---|---|
-| Por hacer → En curso | Se aborda la documentación del escenario de fallo de guardado. |
-| En curso → En revisión | Se revisa que PRU-019 indique las condiciones iniciales, el fallo y el resultado esperado. |
-| En revisión → Terminado | Se comprueba que el texto cumple los criterios de aceptación de la tarjeta. |
-
-Antes de trasladar la tarjeta a Terminado se contrastó el texto guardado con sus tres criterios de aceptación. La [prueba](../pruebas/pruebas.md) describe el escenario y la [matriz](../matrices/trazabilidad.md) lo vincula con RF-015.
-
-La configuración del tablero también tiene su registro en la [tarjeta de prioridades y criterios](https://trello.com/c/RfHgERQk), con sus tres comprobaciones completas. Las tarjetas conservan sus movimientos y listas de aceptación como evidencia del trabajo.
-
-La actualización de las reglas de concurrencia se registra en dos tarjetas: [documentar las reglas](https://trello.com/c/rCAaVxzg) y [aplicar los límites en Trello](https://trello.com/c/loubRJnf). Durante esta actualización hubo dos tarjetas En curso al mismo tiempo, dentro del máximo acordado. Sus criterios permiten contrastar los límites del documento con las columnas y las reglas del tablero.
-
-El alcance del CR-002 y los riesgos de las reglas del tablero están en las [matrices de impacto](../matrices/impacto-cambios.md) y [riesgos](../matrices/riesgos-cambios.md).
+El alcance y los riesgos del CR-002 se detallan en las [matrices de impacto](../matrices/impacto-cambios.md) y [riesgos](../matrices/riesgos-cambios.md).

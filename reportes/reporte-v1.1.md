@@ -31,3 +31,5 @@ Se modifica un requisito, un caso de uso y una clase. El modelo añade un atribu
 REQ-001, REQ-002, REQ-007 y REQ-010 conservan sus reglas. El motivo obligatorio se aplica a los ajustes manuales; las salidas generadas por ventas mantienen el flujo de CU-001 y el método registrarSalida().
 
 La entrega v2.0 reúne este cambio y los posteriores en las [matrices de impacto](../matrices/impacto-cambios.md) y [riesgos](../matrices/riesgos-cambios.md).
+
+[Tarjeta del CR-001](https://trello.com/c/O96QYyu5) · [Escenarios documentados del ajuste](https://trello.com/c/I3ru0jJN)
