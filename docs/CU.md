@@ -10,7 +10,7 @@ Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado ut
 | CU-004 | Gestionar promociones | Administrador | RF-008 |
 | CU-005 | Reservar producto (Separación en tienda) | Cliente registrado | RF-007, RF-009 |
 | CU-006 | Gestionar inventario | Responsable de almacén | RF-002, RF-015 |
-| CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 |
+| CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 y, con recepción inmediata, RF-005 |
 | CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-004, RF-005 |
 
 ![Diagrama general de casos de uso](../modelos/casos-de-uso.png)
@@ -190,7 +190,7 @@ Precondiciones: Humberto tiene una sesión administrativa activa con acceso auto
 | Humberto solo consulta existencias o historial | Mostrar la información sin modificar el stock. |
 | Humberto mantiene un producto | Registrar el producto con precio y stock inicial, o actualizar el precio de uno existente. |
 | El stock de un producto activo es igual al mínimo configurado | Mostrar la alerta; esa igualdad por sí sola no activa CU-008. |
-| El stock está por debajo del mínimo y Humberto decide reponer | Ejecutar CU-008 en el rol de Responsable de compras. Registrar la orden no modifica el stock. |
+| El stock está por debajo del mínimo y Humberto decide reponer | Ejecutar CU-008 en el rol de Responsable de compras. El stock aumenta cuando se registra la recepción. |
 | Un producto inactivo tiene stock menor o igual al mínimo | No incluirlo en la alerta. |
 | El usuario no tiene acceso autorizado | Rechazar la operación sin guardar cambios. |
 | El motivo está vacío o contiene únicamente espacios | Solicitar corregirlo; el stock permanece sin cambios y no se registra el ajuste. |
@@ -207,11 +207,11 @@ El [proceso crítico](proceso-critico.md) presenta el flujo de CU-006 y sus cont
 
 Actor: Responsable de compras, rol desempeñado por Humberto Dávalos.
 
-Requisitos relacionados: RF-003, RF-004 y RF-007.
+Requisitos relacionados: RF-003, RF-004 y RF-007. La recepción inmediata aplica también RF-005.
 
 Relaciones: incluye CU-003; puede extender CU-006 con stock por debajo del mínimo y decisión de reponer.
 
-Precondiciones: sesión administrativa activa y productos existentes en el catálogo. La identificación del proveedor se completa dentro de la orden.
+Precondiciones: sesión administrativa activa y datos del proveedor. Humberto puede seleccionar un producto del catálogo o darlo de alta desde el formulario.
 
 ### Flujo principal
 
@@ -233,7 +233,7 @@ Precondiciones: sesión administrativa activa y productos existentes en el catá
 | La cantidad o el costo no es positivo | Rechazar la línea y señalar el campo. |
 | La orden no contiene líneas | Impedir el guardado. |
 
-Postcondición de éxito: la orden conserva proveedor, productos, cantidades, costos, total estimado y estado pendiente. Registrar la orden no modifica existencias; el incremento corresponde a CU-009. El proveedor no necesita una cuenta ni un caso de uso independiente.
+Postcondición de éxito. La orden conserva proveedor, productos, cantidades, costos y total estimado. Si queda pendiente, las existencias se mantienen. Si Humberto registra la recepción en el mismo formulario, la compra queda recibida y el stock aumenta por las cantidades ingresadas. El proveedor no necesita una cuenta ni un caso de uso independiente.
 
 ## CU-009: Gestionar compras (Recepción de mercadería)
 
@@ -241,7 +241,7 @@ Actor: Responsable de compras, rol desempeñado por Humberto Dávalos.
 
 Requisitos relacionados: RF-004 y RF-005.
 
-Precondiciones: sesión administrativa activa, orden pendiente con saldo por recibir, mercadería verificada físicamente y referencia de recepción no utilizada.
+Precondiciones: sesión administrativa activa, mercadería verificada físicamente y referencia de recepción no utilizada. En el flujo principal debe existir una orden pendiente con saldo por recibir.
 
 ### Flujo principal
 
@@ -255,6 +255,7 @@ Precondiciones: sesión administrativa activa, orden pendiente con saldo por rec
 
 | Situación | Respuesta |
 |---|---|
+| La mercadería ya fue recibida al registrar la compra en CU-008 | Guardar la compra, la recepción y el ingreso de stock en una sola transacción. |
 | La entrega es menor que el saldo por recibir | Conservar la orden pendiente con la diferencia restante. |
 | Se anula una orden sin recepciones registradas | Marcarla anulada sin modificar existencias. |
 | La cantidad recibida supera el saldo de la orden | Rechazar y solicitar corrección. |
