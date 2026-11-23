@@ -16,7 +16,7 @@ Se limita el trabajo a dos tarjetas en En curso y dos en En revisión. Al revisa
 
 ## 3. Kanban en Trello
 
-[Tablero Comercial Nazareth — Kanban V2](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
+[Tablero Kanban de Comercial Nazareth](https://trello.com/b/9LEaT3KG/comercial-nazareth-kanban-v2).
 
 | Estado | Límite | Regla de trabajo |
 |---|---|---|
@@ -27,13 +27,15 @@ Se limita el trabajo a dos tarjetas en En curso y dos en En revisión. Al revisa
 
 ### Reglas de concurrencia
 
-El límite de trabajo en curso (WIP) cuenta las tarjetas iniciadas que todavía no han terminado. Se permiten hasta cuatro en conjunto: dos En curso y dos En revisión. Los límites cuentan tarjetas, no personas; varios integrantes pueden colaborar en una misma tarea.
+El [CR-002](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/9) fija dos tarjetas En curso y dos En revisión. Cada columna aplica su propio límite. Una tarjeta cuenta una vez, aunque colaboren varios integrantes.
 
-1. Antes de iniciar o mover una tarjeta, comprobar que la etapa de destino tenga espacio. Una etapa llena no recibe otra tarjeta.
-2. Priorizar terminar, revisar o desbloquear trabajo existente antes de iniciar más tareas.
-3. Una tarjeta bloqueada permanece en su etapa y cuenta dentro del límite. Registrar el impedimento y la acción necesaria para resolverlo.
-4. Si una revisión requiere una corrección, devolver la tarjeta a En curso solo cuando haya espacio. Mientras tanto permanece En revisión y sigue contando en su límite.
-5. Mover una tarjeta a Terminado cuando cumpla sus criterios de aceptación y tenga la evidencia enlazada.
+| Situación | Qué hace el equipo |
+|---|---|
+| En curso tiene dos tarjetas y se quiere iniciar otra | La tarjeta sigue en Por hacer. El equipo prioriza terminar, revisar o desbloquear las que ya empezó. |
+| En revisión tiene dos tarjetas | El trabajo que espera revisión sigue En curso y cuenta en esa etapa. |
+| Una tarjeta está bloqueada | Permanece en su columna y cuenta para el límite. Se registra qué la bloquea y qué hace falta para resolverlo. |
+| Una revisión requiere correcciones | La tarjeta vuelve a En curso cuando hay espacio. Mientras espera, cuenta en En revisión. |
+| Se cumplen los criterios de aceptación | La tarjeta pasa a Terminado con la evidencia enlazada. |
 
 El control se realiza manualmente antes de cada movimiento. Los límites son visibles en los nombres de las columnas y las reglas completas están en la [tarjeta de Kanban](https://trello.com/c/2DwyXuC1). Se revisan según la capacidad del equipo y la acumulación observada en cada etapa.
 
@@ -64,3 +66,12 @@ La configuración del tablero también tiene su registro en la [tarjeta de prior
 
 La actualización de las reglas de concurrencia se registra en dos tarjetas: [documentar las reglas](https://trello.com/c/rCAaVxzg) y [aplicar los límites en Trello](https://trello.com/c/loubRJnf). Durante esta actualización hubo dos tarjetas En curso al mismo tiempo, dentro del máximo acordado. Sus criterios permiten contrastar los límites del documento con las columnas y las reglas del tablero.
 
+
+### Impacto del cambio
+
+| Dimensión | Efecto |
+|---|---|
+| Alcance | Cambian las reglas para iniciar, revisar y devolver tarjetas. |
+| Tiempo | Una tarjeta espera cuando la columna de destino está llena. El equipo puede liberar espacio atendiendo las tarjetas iniciadas. |
+| Calidad | Cada tarjeta que termina conserva sus criterios comprobados y la evidencia correspondiente. |
+| Riesgo | Si se dejan fuera del conteo las tarjetas bloqueadas, se supera el límite. Mantenerlas en su columna hace visible la capacidad real. |
