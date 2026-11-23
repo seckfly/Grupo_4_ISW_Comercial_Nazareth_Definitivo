@@ -1,4 +1,4 @@
-# Comercial Nazareth: entrega definitiva
+# Comercial Nazareth · v2.0
 
 Grupo 4 · Ingeniería de Software
 
@@ -14,6 +14,15 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El rep
 | Cesar Jeremin Alonso Chuquimango Reyes | N00480808 |
 | Alonso Castillo Davalos | N00491764 |
 
+## Versiones
+
+| Versión | Contenido |
+|---|---|
+| [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.0) | Línea base de cinco requisitos, cuatro casos de uso y seis pruebas documentadas. |
+| [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.1) | CR-001: motivo obligatorio en los ajustes de existencias. Se actualiza una prueba y se agregan dos. |
+| **v2.0** | Entrega final: SRS completo, ocho casos de uso, flujo crítico de inventario, 23 pruebas documentadas y reglas de Kanban. |
+
+El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidencia de cada CR.
 
 ## Documentos
 
@@ -25,29 +34,28 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El rep
 | [Convención de identificadores](docs/convencion-ids.md) | Identificadores usados en SRS, casos de uso, modelo y pruebas. |
 | [Matriz de trazabilidad](matrices/trazabilidad.md) | Vínculos de los 15 requisitos funcionales y los 6 no funcionales. |
 | [Pruebas](pruebas/pruebas.md) | Veintitrés casos documentados, incluidos los escenarios de CR-001. |
-| [Hoja de trazabilidad](reportes/trazabilidad-s12.xlsx) | Cobertura calculada a partir de los vínculos de la matriz. |
-| [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencias del flujo de V2. |
+| [Hoja de trazabilidad](reportes/trazabilidad-v2.0.xlsx) | Cobertura calculada a partir de los vínculos de la matriz. |
+| [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencia del tablero. |
 | [Reporte v1.1](reportes/reporte-v1.1.md) | Comparación histórica entre v1.0 y v1.1. |
 
 ## Modelos
 
 | Modelo | Visualización | Fuente editable |
 |---|---|---|
-| Casos de uso del sistema | [PNG](modelos/casos-de-uso.png) | Diagrama de los ocho casos de uso. |
+| Casos de uso del sistema | [PNG](modelos/casos-de-uso.png) | [draw.io](modelos/casos-de-uso.drawio) |
 | Clases del alcance seleccionado | [PNG](modelos/clases.png) | [draw.io](modelos/clases.drawio) |
 | Flujo de CU-006: Gestionar inventario | [PNG](modelos/actividad-gestionar-inventario.png) | [draw.io](modelos/actividad-gestionar-inventario.drawio) · [XML](modelos/actividad-gestionar-inventario.xml) |
 
 ## Alcance de la trazabilidad
 
-La [matriz](matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del negocio del SRS. Los 23 casos de [pruebas.md](pruebas/pruebas.md) cubren el catálogo de requisitos. El modelo disponible tiene seis clases vinculadas con cinco RF. La [hoja de cálculo](reportes/trazabilidad-s12.xlsx) calcula la cobertura y comprueba los vínculos entre requisitos y pruebas.
+La [matriz](matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del negocio del SRS. Los 23 casos de [pruebas.md](pruebas/pruebas.md) cubren el catálogo de requisitos. El modelo disponible tiene seis clases vinculadas con cinco RF. La [hoja de cálculo](reportes/trazabilidad-v2.0.xlsx) calcula la cobertura y comprueba los vínculos entre requisitos y pruebas.
 
 CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserva el ajuste, el motivo y el stock en una misma transacción. El flujo de esta entrega desarrolla ese proceso y su relación con la reposición.
 
-## Sesión 12
+## Reportes
 
-- [Impacto de CR-001](matrices/impacto-cr-001.md): alcance, tiempo y calidad/costo.
-- [Riesgos de CR-001](matrices/riesgos-cr-001.md): probabilidad, impacto y respuesta.
-- [Resumen de trazabilidad](reportes/trazabilidad-s12.md) y [hoja de cálculo](reportes/trazabilidad-s12.xlsx): catálogo completo y cobertura documental.
+- [Trazabilidad v2.0](reportes/trazabilidad-v2.0.md) y [Excel](reportes/trazabilidad-v2.0.xlsx).
+- [Comparación de v1.0 y v1.1](reportes/reporte-v1.1.md), con el impacto y los riesgos del CR-001.
 
 ## Kanban
 
