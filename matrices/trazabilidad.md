@@ -50,6 +50,6 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 
 Los 15 RF y los seis RNF tienen al menos un caso de prueba documentado. Los ocho casos de uso y las seis clases del modelo se conservan. Cinco RF se vinculan directamente con ese modelo de clases; las demás filas identifican su caso de uso o ámbito y sus pruebas.
 
-RF-015 se vincula con CU-006, CLS-Producto, CLS-MovimientoInventario y PRU-016 a PRU-019. El recorrido inverso parte de cualquiera de esas pruebas y regresa a RF-015. La columna «Último CR» registra CR-001.
+La columna «Último CR» vincula RF-015 con CR-001, RF-005 con CR-003 y RF-001 con CR-004. El [informe de trazabilidad](../reportes/trazabilidad-v2.0.md#trazabilidad-de-los-cambios) reúne esos recorridos y la evidencia de Kanban correspondiente a CR-002.
 
 [Hoja de cálculo de trazabilidad](../reportes/trazabilidad-v2.0.xlsx).
