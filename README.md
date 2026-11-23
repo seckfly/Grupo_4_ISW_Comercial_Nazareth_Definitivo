@@ -24,3 +24,7 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Diagrama de clases](modelos/clases.png), con su fuente editable [clases.drawio](modelos/clases.drawio).
 - [Pruebas documentadas](pruebas/pruebas.md).
 - [Matriz de trazabilidad](matrices/trazabilidad.md).
+
+## Seguimiento de la línea base
+
+El [tablero de Comercial Nazareth · Miércoles](https://trello.com/b/pG8s0HQ8/comercial-nazareth-mi%C3%A9rcoles) reúne el trabajo documentado. Para la v1.0, consulta las tarjetas de [línea base](https://trello.com/c/239z6Ncn), [requisitos y casos de uso](https://trello.com/c/0MBgtqOX) y [modelo de clases](https://trello.com/c/Fmta1NlH).
