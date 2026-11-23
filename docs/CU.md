@@ -15,6 +15,8 @@ Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado ut
 
 ![Diagrama general de casos de uso](../modelos/casos-de-uso.png)
 
+[Archivo editable del diagrama](../modelos/casos-de-uso.drawio).
+
 ## CU-001: Registrar venta
 
 Actor: Vendedor, rol desempeñado por Humberto Dávalos.

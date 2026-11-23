@@ -6,11 +6,11 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 
 | ID | Requisito | Caso de uso o ámbito | Clase del modelo | Pruebas documentadas | Último CR |
 |---|---|---|---|---|---|
-| RF-001 | Registrar venta | CU-001 | CLS-Venta, CLS-DetalleVenta, CLS-Producto, CLS-MovimientoInventario | PRU-001, PRU-003, PRU-020 | — |
+| RF-001 | Registrar venta | CU-001 | CLS-Venta, CLS-DetalleVenta, CLS-Producto, CLS-MovimientoInventario | PRU-001, PRU-003, PRU-020 | [CR-004](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/11) |
 | RF-002 | Consultar existencias y alertas | CU-006 | CLS-Producto | PRU-002 | — |
 | RF-003 | Identificar proveedor de la orden | CU-008 | — | PRU-005 | — |
 | RF-004 | Registrar orden de compra | CU-008, CU-009 | — | PRU-006 | — |
-| RF-005 | Registrar recepción | CU-009 y CU-008 (recepción inmediata) | — | PRU-008 | — |
+| RF-005 | Registrar recepción | CU-009 y CU-008 (recepción inmediata) | — | PRU-008 | [CR-003](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/10) |
 | RF-006 | Acceder según perfil | Acceso transversal | — | PRU-009 | — |
 | RF-007 | Consultar catálogo | CU-003; también CU-001, CU-005 y CU-008 | CLS-Producto, CLS-ListaProductos, CLS-Cliente | PRU-007 | — |
 | RF-008 | Gestionar promociones | CU-004 | — | PRU-010 | — |
@@ -20,7 +20,7 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 | RF-012 | Consultar resumen y reportes | Consulta administrativa | — | PRU-013 | — |
 | RF-013 | Administrar accesos | Acceso transversal | — | PRU-014 | — |
 | RF-014 | Consultar cuenta y beneficios | Portal de clientes | — | PRU-015 | — |
-| RF-015 | Mantener productos e inventario | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 | CR-001 |
+| RF-015 | Mantener productos e inventario | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 | [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) |
 
 ## Requisitos no funcionales
 
@@ -52,4 +52,4 @@ Los 15 RF y los seis RNF tienen al menos un caso de prueba documentado. Los ocho
 
 RF-015 se vincula con CU-006, CLS-Producto, CLS-MovimientoInventario y PRU-016 a PRU-019. El recorrido inverso parte de cualquiera de esas pruebas y regresa a RF-015. La columna «Último CR» registra CR-001.
 
-[Hoja de cálculo de trazabilidad](../reportes/trazabilidad-s12.xlsx).
+[Hoja de cálculo de trazabilidad](../reportes/trazabilidad-v2.0.xlsx).
