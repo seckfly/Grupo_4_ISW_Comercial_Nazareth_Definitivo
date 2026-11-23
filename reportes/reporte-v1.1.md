@@ -31,3 +31,5 @@ En v1.0, REQ-015 exigía conservar el historial de ajustes, pero no obligaba a i
 Se modifica un requisito, un caso de uso y una clase. El modelo añade un atributo y un método, y modifica la firma de registrarAjuste. Se actualiza una prueba y se añaden dos. La cobertura permanece en 100 %, con mayor detalle para los escenarios de REQ-015.
 
 REQ-001, REQ-002, REQ-007 y REQ-010 conservan sus reglas. El motivo obligatorio se aplica a los ajustes manuales; las salidas generadas por ventas mantienen el flujo de CU-001 y el método registrarSalida().
+
+[Tarjeta del CR-001](https://trello.com/c/O96QYyu5) · [Escenarios documentados del ajuste](https://trello.com/c/I3ru0jJN)

@@ -25,3 +25,7 @@ El alcance comprende cinco requisitos de venta, existencias, catálogo, vinculac
 - [Pruebas documentadas](pruebas/pruebas.md).
 - [Matriz de trazabilidad](matrices/trazabilidad.md).
 - [Reporte de trazabilidad v1.1](reportes/reporte-v1.1.md).
+
+## Seguimiento del CR-001
+
+El [tablero de Comercial Nazareth · Miércoles](https://trello.com/b/pG8s0HQ8/comercial-nazareth-mi%C3%A9rcoles) enlaza los artefactos de cada versión. Para la v1.1, consulta las tarjetas del [motivo obligatorio en ajustes](https://trello.com/c/O96QYyu5) y de sus [escenarios de prueba](https://trello.com/c/I3ru0jJN).
