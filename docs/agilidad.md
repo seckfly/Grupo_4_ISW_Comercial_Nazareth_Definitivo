@@ -66,12 +66,4 @@ La configuración del tablero también tiene su registro en la [tarjeta de prior
 
 La actualización de las reglas de concurrencia se registra en dos tarjetas: [documentar las reglas](https://trello.com/c/rCAaVxzg) y [aplicar los límites en Trello](https://trello.com/c/loubRJnf). Durante esta actualización hubo dos tarjetas En curso al mismo tiempo, dentro del máximo acordado. Sus criterios permiten contrastar los límites del documento con las columnas y las reglas del tablero.
 
-
-### Impacto del cambio
-
-| Dimensión | Efecto |
-|---|---|
-| Alcance | Cambian las reglas para iniciar, revisar y devolver tarjetas. |
-| Tiempo | Una tarjeta espera cuando la columna de destino está llena. El equipo puede liberar espacio atendiendo las tarjetas iniciadas. |
-| Calidad | Cada tarjeta que termina conserva sus criterios comprobados y la evidencia correspondiente. |
-| Riesgo | Si se dejan fuera del conteo las tarjetas bloqueadas, se supera el límite. Mantenerlas en su columna hace visible la capacidad real. |
+El alcance del CR-002 y los riesgos de las reglas del tablero están en las [matrices de impacto](../matrices/impacto-cambios.md) y [riesgos](../matrices/riesgos-cambios.md).

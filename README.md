@@ -33,7 +33,7 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 | [Proceso crítico](docs/proceso-critico.md) | Justificación y flujo de CU-006, con los controles del ajuste manual. |
 | [Convención de identificadores](docs/convencion-ids.md) | Identificadores usados en SRS, casos de uso, modelo y pruebas. |
 | [Matriz de trazabilidad](matrices/trazabilidad.md) | Vínculos de los 15 requisitos funcionales y los 6 no funcionales. |
-| [Pruebas](pruebas/pruebas.md) | Veintitrés casos documentados, incluidos los escenarios de CR-001. |
+| [Pruebas](pruebas/pruebas.md) | Veintitrés casos documentados con sus escenarios y resultados esperados. |
 | [Hoja de trazabilidad](reportes/trazabilidad-v2.0.xlsx) | Cobertura calculada a partir de los vínculos de la matriz. |
 | [Agilidad y concurrencia](docs/agilidad.md) | Kanban, límites de dos tarjetas por etapa y evidencia del tablero. |
 | [Reporte v1.1](reportes/reporte-v1.1.md) | Comparación histórica entre v1.0 y v1.1. |
@@ -50,12 +50,17 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 
 La [matriz](matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del negocio del SRS. Los 23 casos de [pruebas.md](pruebas/pruebas.md) cubren el catálogo de requisitos. El modelo disponible tiene seis clases vinculadas con cinco RF. La [hoja de cálculo](reportes/trazabilidad-v2.0.xlsx) calcula la cobertura y comprueba los vínculos entre requisitos y pruebas.
 
-CU-006 incorpora CR-001: cada ajuste manual requiere un motivo válido y conserva el ajuste, el motivo y el stock en una misma transacción. El flujo de esta entrega desarrolla ese proceso y su relación con la reposición.
+El [informe de trazabilidad](reportes/trazabilidad-v2.0.md#trazabilidad-de-los-cambios) muestra cómo se verifica cada cambio de la entrega.
 
 ## Reportes
 
 - [Trazabilidad v2.0](reportes/trazabilidad-v2.0.md) y [Excel](reportes/trazabilidad-v2.0.xlsx).
-- [Comparación de v1.0 y v1.1](reportes/reporte-v1.1.md), con el impacto y los riesgos del CR-001.
+- [Comparación de v1.0 y v1.1](reportes/reporte-v1.1.md), con el detalle del CR-001.
+
+## Evaluación de los cambios
+
+- [Matriz de impacto](matrices/impacto-cambios.md)
+- [Matriz de riesgos](matrices/riesgos-cambios.md)
 
 ## Kanban
 
