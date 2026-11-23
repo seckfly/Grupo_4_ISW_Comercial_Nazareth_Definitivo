@@ -199,7 +199,7 @@ Precondiciones: Humberto tiene una sesión administrativa activa con acceso auto
 
 Postcondición de éxito: la consulta refleja las existencias; las modificaciones autorizadas quedan guardadas. Cada ajuste manual conserva su motivo en el historial, junto con los ajustes anteriores.
 
-La exigencia del motivo corresponde a los ajustes manuales. Las salidas por ventas siguen CU-001 y las entradas por recepción siguen CU-009.
+El [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) exige el motivo en los ajustes manuales. Las salidas por ventas siguen CU-001 y las entradas por recepción siguen CU-009.
 
 El [proceso crítico](proceso-critico.md) presenta el flujo de CU-006 y sus controles.
 
