@@ -1,5 +1,7 @@
 # Análisis de impacto de CR-001
 
+[CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) · Versión v1.1
+
 Cambio evaluado: motivo obligatorio en ajustes manuales de existencias de RF-015. La tabla compara el alcance del cambio antes y después de CR-001.
 
 | Dimensión | Artefactos afectados | Efecto y medida |

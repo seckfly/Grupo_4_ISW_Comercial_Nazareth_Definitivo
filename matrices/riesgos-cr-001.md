@@ -1,5 +1,7 @@
 # Riesgos asociados a CR-001
 
+[CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) · Versión v1.1
+
 Probabilidad e impacto son estimaciones cualitativas para CR-001 y se expresan como baja, media o alta.
 
 | ID | Riesgo | Probabilidad | Impacto | Prevención | Contingencia |

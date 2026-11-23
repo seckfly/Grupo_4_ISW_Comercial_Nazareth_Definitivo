@@ -4,7 +4,7 @@
 
 El sistema organiza las ventas, las existencias y la reposición de Comercial Nazareth, negocio minorista de abarrotes ubicado en Ascope, La Libertad. Humberto Dávalos es el propietario y único trabajador. Registra sus operaciones en cuadernos y estima el stock mediante revisión visual; necesita conocer las cantidades disponibles para decidir qué comprar y cuánto reponer.
 
-Esta especificación reúne quince requisitos funcionales, seis no funcionales y ocho reglas del negocio. RF-015 incluye la regla de CR-001 para ajustes manuales de inventario.
+Esta especificación reúne quince requisitos funcionales, seis no funcionales y ocho reglas del negocio. RF-015 incluye el motivo obligatorio de los ajustes manuales, definido en el [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8).
 
 ## Alcance
 
