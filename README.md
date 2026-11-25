@@ -16,8 +16,8 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El rep
 
 | Versión | Contenido |
 |---|---|
-| [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.0) | Línea base de cinco requisitos, cuatro casos de uso y seis pruebas documentadas. |
-| [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.1) | CR-001: motivo obligatorio en los ajustes de existencias. Se actualiza una prueba y se agregan dos. |
+| [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.0) | Línea base de cinco requisitos, cuatro casos de uso y seis pruebas documentadas. |
+| [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.1) | CR-001: motivo obligatorio en los ajustes de existencias. Se actualiza una prueba y se agregan dos. |
 | [v2.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v2.0) | Entrega final: SRS completo, ocho casos de uso, flujo crítico de inventario, 23 pruebas documentadas y reglas de Kanban. |
 
 El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidencia de cada CR.

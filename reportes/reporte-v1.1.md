@@ -1,6 +1,6 @@
 # Reporte de trazabilidad de Comercial Nazareth (v1.1)
 
-La [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.0) reúne los cinco requisitos de la línea base. La [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.1) incorpora el [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8), que exige un motivo en los ajustes manuales. En ambas etiquetas, el requisito figura como `REQ-015`. En el catálogo de la v2.0 figura como `RF-015`.
+La [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.0) reúne los cinco requisitos de la línea base. La [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.1) incorpora el [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8), que exige un motivo en los ajustes manuales. En ambas etiquetas, el requisito figura como `REQ-015`. En el catálogo de la v2.0 figura como `RF-015`.
 
 | Métrica | v1.0 | v1.1 |
 |---|---|---|
