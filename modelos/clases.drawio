@@ -181,7 +181,7 @@
             <mxPoint as="offset" x="23" y="0" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="venta-mov-m1" value="0..*" vertex="1" parent="venta-mov" style="edgeLabel;fontFamily=Arial;html=1;whiteSpace=wrap;fontColor=#182A23;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;resizable=0;connectable=0;">
+        <mxCell id="venta-mov-m1" value="1..*" vertex="1" parent="venta-mov" style="edgeLabel;fontFamily=Arial;html=1;whiteSpace=wrap;fontColor=#182A23;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;resizable=0;connectable=0;">
           <mxGeometry x="0.63" relative="1" as="geometry">
             <mxPoint as="offset" x="23" y="0" />
           </mxGeometry>

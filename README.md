@@ -41,7 +41,7 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 | Modelo | Visualización | Fuente editable |
 |---|---|---|
 | Casos de uso del sistema | [PNG](modelos/casos-de-uso.png) · [SVG](modelos/casos-de-uso.svg) | [draw.io](modelos/casos-de-uso.drawio) |
-| Clases del alcance seleccionado | [PNG](modelos/clases.png) | [draw.io](modelos/clases.drawio) |
+| Clases del alcance seleccionado | [PNG](modelos/clases.png) · [SVG](modelos/clases.svg) | [draw.io](modelos/clases.drawio) |
 | Flujo de CU-006: Gestionar inventario | [PNG](modelos/actividad-gestionar-inventario.png) | [draw.io](modelos/actividad-gestionar-inventario.drawio) · [XML](modelos/actividad-gestionar-inventario.xml) |
 
 ## Alcance de la trazabilidad
