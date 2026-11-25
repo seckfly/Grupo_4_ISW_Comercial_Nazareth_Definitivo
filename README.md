@@ -2,7 +2,7 @@
 
 Grupo 4 · Ingeniería de Software
 
-Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El repositorio reúne el SRS completo, los ocho casos de uso, las pruebas del catálogo y el flujo de CU-006: Gestionar inventario.
+Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El repositorio reúne el SRS completo, los nueve casos de uso, las pruebas del catálogo y el flujo de CU-006: Gestionar inventario.
 
 ## Integrantes
 
@@ -18,7 +18,7 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El rep
 |---|---|
 | [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.0) | Línea base de cinco requisitos, cuatro casos de uso y seis pruebas documentadas. |
 | [v1.1](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.1) | CR-001: motivo obligatorio en los ajustes de existencias. Se actualiza una prueba y se agregan dos. |
-| [v2.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v2.0) | Entrega final: SRS completo, ocho casos de uso, flujo crítico de inventario, 23 pruebas documentadas y reglas de Kanban. |
+| [v2.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v2.0) | Entrega final: SRS completo, nueve casos de uso, flujo crítico de inventario, 23 pruebas documentadas y reglas de Kanban. |
 
 El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidencia de cada CR.
 
@@ -27,7 +27,7 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 | Documento | Contenido |
 |---|---|
 | [SRS completo](docs/SRS.md) | Quince requisitos funcionales, seis no funcionales y ocho reglas del negocio. |
-| [Casos de uso](docs/CU.md) | Ocho casos de uso, sus actores, flujos y excepciones. |
+| [Casos de uso](docs/CU.md) | Nueve casos de uso, sus actores, flujos y excepciones. |
 | [Proceso crítico](docs/proceso-critico.md) | Justificación y flujo de CU-006, con los controles del ajuste manual. |
 | [Convención de identificadores](docs/convencion-ids.md) | Identificadores usados en SRS, casos de uso, modelo y pruebas. |
 | [Matriz de trazabilidad](matrices/trazabilidad.md) | Vínculos de los 15 requisitos funcionales y los 6 no funcionales. |
@@ -40,7 +40,7 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 
 | Modelo | Visualización | Fuente editable |
 |---|---|---|
-| Casos de uso del sistema | [PNG](modelos/casos-de-uso.png) | [draw.io](modelos/casos-de-uso.drawio) |
+| Casos de uso del sistema | [SVG](modelos/casos-de-uso.svg) | [draw.io](modelos/casos-de-uso.drawio) |
 | Clases del alcance seleccionado | [PNG](modelos/clases.png) | [draw.io](modelos/clases.drawio) |
 | Flujo de CU-006: Gestionar inventario | [PNG](modelos/actividad-gestionar-inventario.png) | [draw.io](modelos/actividad-gestionar-inventario.drawio) · [XML](modelos/actividad-gestionar-inventario.xml) |
 

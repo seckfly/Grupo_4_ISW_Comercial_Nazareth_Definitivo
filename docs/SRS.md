@@ -44,11 +44,13 @@ Los cuatro roles internos corresponden al perfil administrativo de Humberto. El 
 | RF-010 | Vincular cliente a la venta | El sistema debe permitir vincular un cliente registrado a la venta cuando el comprador se identifique y registrar la venta sin cliente asociado cuando no se identifique. | CU-002 |
 | RF-011 | Consultar clientes frecuentes | El sistema debe mostrar nombre, contacto, frecuencia e historial básico de clientes identificados. | Consulta administrativa |
 | RF-012 | Consultar resumen y reportes | El sistema debe mostrar ventas, métodos de pago y productos con movimiento por periodo. | Consulta administrativa |
-| RF-013 | Administrar accesos | El sistema debe registrar, editar y desactivar cuentas con rol autorizado y proteger la cuenta administrativa. | Acceso transversal |
+| RF-013 | Administrar accesos | El sistema debe registrar, editar y desactivar cuentas con rol autorizado y proteger la cuenta administrativa. | CU-007 |
 | RF-014 | Consultar cuenta y beneficios | El sistema debe mostrar al cliente registrado sus datos, historial de compras y puntos asociados a su cuenta. | Portal de clientes |
 | RF-015 | Mantener productos e inventario | El sistema debe permitir registrar productos con su precio y stock inicial, actualizar el precio de productos existentes y realizar ajustes autorizados de existencias conservando su historial. Cada ajuste manual debe incluir un motivo con al menos un carácter distinto de espacios y conservarlo en el historial. Si el motivo está vacío o contiene únicamente espacios, el sistema debe solicitar su corrección sin modificar el stock ni registrar el ajuste. El ajuste, su motivo y la actualización del stock deben guardarse en una misma transacción. Esta condición del motivo no se aplica a las salidas generadas por ventas. | CU-006 |
 
 La solicitud de separación de CU-005 contempla hasta tres productos distintos y un vencimiento de 24 horas, conforme a la especificación del proyecto. La solicitud no confirma una venta ni bloquea existencias.
+
+RF-006 describe el inicio y cierre de sesión según el perfil; RF-013 corresponde a la administración de cuentas por el Administrador. Son responsabilidades distintas: acceder al sistema no equivale a registrar, editar o desactivar cuentas.
 
 ## Requisitos no funcionales
 
@@ -80,6 +82,6 @@ El cálculo de descuentos debe coincidir entre la interfaz y el servicio. En los
 
 ## Trazabilidad
 
-La [matriz](../matrices/trazabilidad.md) relaciona los quince RF, los seis RNF y las ocho reglas con los [casos de uso](CU.md), el modelo disponible y los [23 casos de prueba](../pruebas/pruebas.md). Diez RF se vinculan con casos de uso; los otros cinco se identifican por su ámbito en el SRS. Las pruebas describen escenarios y resultados esperados.
+La [matriz](../matrices/trazabilidad.md) relaciona los quince RF, los seis RNF y las ocho reglas con los [casos de uso](CU.md), el modelo disponible y los [23 casos de prueba](../pruebas/pruebas.md). Once RF se vinculan con casos de uso; los otros cuatro se identifican por su ámbito en el SRS. Las pruebas describen escenarios y resultados esperados.
 
-El [diagrama de casos de uso](../modelos/casos-de-uso.png) representa los ocho CU. El [modelo de clases](../modelos/clases.png) contiene seis clases vinculadas con cinco RF. El [proceso crítico](proceso-critico.md) desarrolla CU-006.
+El [diagrama de casos de uso](../modelos/casos-de-uso.svg) representa los nueve CU. El [modelo de clases](../modelos/clases.png) contiene seis clases vinculadas con cinco RF. El [proceso crítico](proceso-critico.md) desarrolla CU-006.

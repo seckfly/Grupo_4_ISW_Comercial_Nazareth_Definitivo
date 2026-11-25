@@ -10,10 +10,11 @@ Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado ut
 | CU-004 | Gestionar promociones | Administrador | RF-008 |
 | CU-005 | Reservar producto (Separación en tienda) | Cliente registrado | RF-007, RF-009 |
 | CU-006 | Gestionar inventario | Responsable de almacén | RF-002, RF-015 |
+| CU-007 | Gestionar credenciales | Administrador | RF-013 |
 | CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 y, con recepción inmediata, RF-005 |
 | CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-004, RF-005 |
 
-![Diagrama general de casos de uso](../modelos/casos-de-uso.png)
+![Diagrama general de casos de uso](../modelos/casos-de-uso.svg)
 
 [Archivo editable del diagrama](../modelos/casos-de-uso.drawio).
 
@@ -204,6 +205,38 @@ Postcondición de éxito: la consulta refleja las existencias; las modificacione
 El [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) exige el motivo en los ajustes manuales. Las salidas por ventas siguen CU-001 y las entradas por recepción siguen CU-009.
 
 El [proceso crítico](proceso-critico.md) presenta el flujo de CU-006 y sus controles.
+
+## CU-007: Gestionar credenciales
+
+Actor: Administrador, rol desempeñado por Humberto Dávalos.
+
+Requisito relacionado: RF-013.
+
+Precondiciones: Humberto tiene una sesión administrativa activa y permisos para administrar cuentas.
+
+### Flujo principal
+
+1. Humberto ingresa a la administración de accesos.
+2. El sistema muestra las cuentas registradas, sus roles y su estado.
+3. Humberto selecciona la operación que necesita realizar: registrar, editar o desactivar una cuenta.
+4. Para registrar una cuenta, ingresa los datos requeridos y asigna un rol autorizado. Para editarla, selecciona una cuenta existente y modifica los datos o el rol que correspondan. Para desactivarla, selecciona la cuenta y confirma la operación.
+5. El sistema valida los datos, comprueba que el rol asignado esté autorizado y verifica que la operación respete la protección de la cuenta administrativa.
+6. El sistema guarda la operación autorizada y confirma el resultado.
+
+### Alternativas y excepciones
+
+| Situación | Respuesta |
+|---|---|
+| Un usuario sin rol autorizado intenta administrar cuentas | Rechazar la operación y conservar las cuentas sin cambios. |
+| Los datos requeridos están incompletos o el rol no está autorizado | Solicitar la corrección y no guardar la cuenta. |
+| La operación compromete la protección de la cuenta administrativa | Rechazar la operación y conservar protegida la cuenta administrativa. |
+| Humberto intenta modificar o desactivar su propia cuenta administrativa protegida | Rechazar la operación y conservar la cuenta activa y protegida. |
+| La cuenta seleccionada no existe o no está disponible para la operación | Informar la situación y no realizar cambios. |
+| Falla el guardado | Informar que la operación no se confirmó y evitar cambios parciales. |
+
+Postcondición de éxito: la cuenta queda registrada, editada o desactivada según la operación autorizada. La cuenta administrativa protegida conserva su condición y acceso.
+
+El alcance de CU-007 comprende el registro, la edición y la desactivación de cuentas autorizadas, conforme a RF-013.
 
 ## CU-008: Registrar orden de compra
 
