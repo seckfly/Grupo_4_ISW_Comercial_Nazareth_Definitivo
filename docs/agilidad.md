@@ -16,7 +16,7 @@ Se limita el trabajo a dos tarjetas en En curso y dos en En revisión. Al revisa
 
 ## 3. Kanban en Trello
 
-[Tablero de Comercial Nazaret](https://trello.com/b/pG8s0HQ8/comercial-nazareth).
+[Tablero Kanban](https://trello.com/b/pG8s0HQ8/comercial-nazareth).
 
 | Estado | Límite | Regla de trabajo |
 |---|---|---|
