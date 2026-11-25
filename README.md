@@ -62,4 +62,4 @@ El [informe de trazabilidad](reportes/reporte-v2.0.md#trazabilidad-de-los-cambio
 
 ## Kanban
 
-[Tablero de Comercial Nazareth](https://trello.com/b/pG8s0HQ8/comercial-nazareth). En curso y En revisión admiten un máximo de dos tarjetas cada una. Las reglas contemplan capacidad, bloqueos, correcciones y criterios de cierre.
+[Tablero de Comercial Nazaret](https://trello.com/b/pG8s0HQ8/comercial-nazareth). En curso y En revisión admiten un máximo de dos tarjetas cada una. Las reglas contemplan capacidad, bloqueos, correcciones y criterios de cierre.
