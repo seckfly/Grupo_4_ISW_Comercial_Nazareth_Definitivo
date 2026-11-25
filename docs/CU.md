@@ -230,6 +230,7 @@ Precondiciones: Humberto tiene una sesión administrativa activa y permisos para
 | Un usuario sin rol autorizado intenta administrar cuentas | Rechazar la operación y conservar las cuentas sin cambios. |
 | Los datos requeridos están incompletos o el rol no está autorizado | Solicitar la corrección y no guardar la cuenta. |
 | La operación compromete la protección de la cuenta administrativa | Rechazar la operación y conservar protegida la cuenta administrativa. |
+| Humberto intenta modificar o desactivar su propia cuenta administrativa protegida | Rechazar la operación y conservar la cuenta activa y protegida. |
 | La cuenta seleccionada no existe o no está disponible para la operación | Informar la situación y no realizar cambios. |
 | Falla el guardado | Informar que la operación no se confirmó y evitar cambios parciales. |
 
