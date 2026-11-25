@@ -2,7 +2,7 @@
 
 CR aplicado: [CR-001: Motivo obligatorio en ajustes manuales de existencias](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8).
 
-Línea base de comparación: [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/tree/v1.0).
+Línea base de comparación: [v1.0](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/releases/tag/v1.0).
 
 | Métrica | v1.0 | v1.1 |
 |---|---|---|
