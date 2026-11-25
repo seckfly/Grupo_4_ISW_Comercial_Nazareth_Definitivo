@@ -10,22 +10,32 @@
   <text x="728" y="64" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#203950">Sistema de Gestión Comercial y Portal de Clientes</text>
 
   <g fill="none" stroke="#203950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M122 202 L122 228 M105 214 L139 214 M122 228 L108 246 M122 228 L136 246"/>
+    <!-- Vendedor -->
     <circle cx="122" cy="194" r="8" fill="#ffffff"/>
+    <path d="M122 202 L122 228 M105 214 L139 214 M122 228 L108 246 M122 228 L136 246"/>
+    <!-- Responsable de compras -->
+    <circle cx="122" cy="510" r="8" fill="#ffffff"/>
+    <path d="M122 518 L122 544 M105 530 L139 530 M122 544 L108 562 M122 544 L136 562"/>
+    <!-- Responsable de almacén -->
+    <circle cx="122" cy="347" r="8" fill="#ffffff"/>
+    <path d="M122 355 L122 381 M105 367 L139 367 M122 381 L108 399 M122 381 L136 399"/>
+    <!-- Administrador -->
+    <circle cx="122" cy="803" r="8" fill="#ffffff"/>
+    <path d="M122 811 L122 837 M105 823 L139 823 M122 837 L108 855 M122 837 L136 855"/>
+    <!-- Cliente registrado -->
+    <circle cx="1295" cy="235" r="8" fill="#ffffff"/>
+    <path d="M1295 243 L1295 269 M1278 255 L1312 255 M1295 269 L1281 287 M1295 269 L1309 287"/>
+
+    <!-- Asociaciones -->
     <path d="M149 220 L317 220"/>
     <path d="M149 206 L231 206 L231 124 L317 124"/>
     <path d="M122 187 L122 75 L961 75 L961 179"/>
     <path d="M149 535 L317 535"/>
     <path d="M149 553 L241 553 L263 638 L317 638"/>
     <path d="M149 520 L209 520 L209 478 L1148 478 L1148 239 L1091 239"/>
-    <path d="M122 355 L122 381 M105 367 L139 367 M122 381 L108 399 M122 381 L136 399"/>
-    <circle cx="122" cy="347" r="8" fill="#ffffff"/>
     <path d="M149 375 L317 375"/>
-    <path d="M122 811 L122 837 M105 823 L139 823 M122 837 L108 855 M122 837 L136 855"/>
-    <circle cx="122" cy="803" r="8" fill="#ffffff"/>
     <path d="M149 830 L210 830 L210 747 L317 747"/>
     <path d="M149 830 L317 851"/>
-    <path d="M122 210 L122 236 M105 222 L139 222 M122 236 L108 254 M122 236 L136 254" opacity="0"/>
     <path d="M1268 247 L1091 220"/>
     <path d="M1268 276 L1091 390"/>
   </g>
@@ -51,25 +61,15 @@
   </g>
 
   <g font-family="Arial, sans-serif" text-anchor="middle" fill="#203950">
-    <g>
-      <text x="122" y="270" font-size="15" font-weight="700">Vendedor</text>
-      <text x="122" y="288" font-size="13">Humberto Dávalos</text>
-    </g>
-    <g>
-      <text x="122" y="586" font-size="14" font-weight="700">Responsable de compras</text>
-      <text x="122" y="604" font-size="13">Humberto Dávalos</text>
-    </g>
-    <g>
-      <text x="122" y="433" font-size="14" font-weight="700">Responsable de almacén</text>
-      <text x="122" y="451" font-size="13">Humberto Dávalos</text>
-    </g>
-    <g>
-      <text x="122" y="887" font-size="15" font-weight="700">Administrador</text>
-      <text x="122" y="905" font-size="13">Humberto Dávalos</text>
-    </g>
-    <g>
-      <text x="1295" y="314" font-size="15" font-weight="700">Cliente registrado</text>
-    </g>
+    <text x="122" y="270" font-size="15" font-weight="700">Vendedor</text>
+    <text x="122" y="288" font-size="13">Humberto Dávalos</text>
+    <text x="122" y="586" font-size="14" font-weight="700">Responsable de compras</text>
+    <text x="122" y="604" font-size="13">Humberto Dávalos</text>
+    <text x="122" y="433" font-size="14" font-weight="700">Responsable de almacén</text>
+    <text x="122" y="451" font-size="13">Humberto Dávalos</text>
+    <text x="122" y="887" font-size="15" font-weight="700">Administrador</text>
+    <text x="122" y="905" font-size="13">Humberto Dávalos</text>
+    <text x="1295" y="314" font-size="15" font-weight="700">Cliente registrado</text>
   </g>
 
   <g font-family="Arial, sans-serif" text-anchor="middle" fill="#182b40" stroke="#587da5" stroke-width="1.7">
@@ -84,7 +84,11 @@
     <ellipse cx="961" cy="390" rx="130" ry="41" fill="#e7f0fc"/>
   </g>
   <g font-family="Arial, sans-serif" text-anchor="middle" fill="#182b40" font-size="17">
-    <g font-weight="700"><text x="447" y="119">CU-002</text><text x="447" y="215">CU-001</text><text x="447" y="370">CU-006</text><text x="447" y="530">CU-008</text><text x="447" y="633">CU-009</text><text x="447" y="742">CU-004</text><text x="447" y="846">CU-007</text><text x="961" y="215">CU-003</text><text x="961" y="385">CU-005</text></g>
+    <g font-weight="700">
+      <text x="447" y="119">CU-002</text><text x="447" y="215">CU-001</text><text x="447" y="370">CU-006</text>
+      <text x="447" y="530">CU-008</text><text x="447" y="633">CU-009</text><text x="447" y="742">CU-004</text>
+      <text x="447" y="846">CU-007</text><text x="961" y="215">CU-003</text><text x="961" y="385">CU-005</text>
+    </g>
     <g font-size="15">
       <text x="447" y="141">Vincular cliente a la venta</text>
       <text x="447" y="237">Registrar venta</text>
