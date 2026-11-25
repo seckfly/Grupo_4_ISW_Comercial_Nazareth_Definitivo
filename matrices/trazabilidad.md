@@ -18,7 +18,7 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 | RF-010 | Vincular cliente a la venta | CU-002; extiende CU-001 | CLS-Cliente, CLS-Venta | PRU-004 | — |
 | RF-011 | Consultar clientes frecuentes | Consulta administrativa | — | PRU-012 | — |
 | RF-012 | Consultar resumen y reportes | Consulta administrativa | — | PRU-013 | — |
-| RF-013 | Administrar accesos | Acceso transversal | — | PRU-014 | — |
+| RF-013 | Administrar accesos | CU-007 | — | PRU-014 | — |
 | RF-014 | Consultar cuenta y beneficios | Portal de clientes | — | PRU-015 | — |
 | RF-015 | Mantener productos e inventario | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 | [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/8) |
 
@@ -48,7 +48,7 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 
 ## Lectura de la matriz
 
-Los 15 RF y los seis RNF tienen al menos un caso de prueba documentado. Los ocho casos de uso y las seis clases del modelo se conservan. Cinco RF se vinculan directamente con ese modelo de clases; las demás filas identifican su caso de uso o ámbito y sus pruebas.
+Los 15 RF y los seis RNF tienen al menos un caso de prueba documentado. Los nueve casos de uso y las seis clases del modelo se conservan. Cinco RF se vinculan directamente con ese modelo de clases; las demás filas identifican su caso de uso o ámbito y sus pruebas.
 
 La columna «Último CR» vincula RF-015 con CR-001, RF-005 con CR-003 y RF-001 con CR-004. El [informe de trazabilidad](../reportes/reporte-v2.0.md#trazabilidad-de-los-cambios) reúne esos recorridos y la evidencia de Kanban correspondiente a CR-002.
 

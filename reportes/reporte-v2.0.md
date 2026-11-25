@@ -7,7 +7,7 @@ La [matriz](../matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las oc
 | RF con prueba documentada | 15 de 15 |
 | RNF con prueba documentada | 6 de 6 |
 | Reglas del negocio con prueba vinculada | 8 de 8 |
-| Casos de uso documentados | 8 |
+| Casos de uso documentados | 9 |
 | Clases del modelo | 6 |
 | RF vinculados con el modelo de clases | 5 de 15 |
 | Casos de prueba documentados | 23 |
