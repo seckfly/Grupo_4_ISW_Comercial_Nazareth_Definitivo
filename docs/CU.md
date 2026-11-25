@@ -265,4 +265,3 @@ Precondiciones: sesión administrativa activa, mercadería verificada físicamen
 | Falla el guardado de la recepción | Revertir las cantidades y movimientos de la operación. |
 
 Postcondición de éxito: queda guardada una recepción sin duplicados y el stock aumenta por lo efectivamente recibido. La orden permanece pendiente si hay saldo o queda recibida cuando se completa. Una orden con entradas registradas no se anula; las devoluciones y la reversión de recepciones quedan fuera de este alcance.
-

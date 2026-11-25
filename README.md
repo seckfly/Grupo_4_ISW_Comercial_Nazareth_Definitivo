@@ -6,13 +6,11 @@ Sistema de gestión comercial y portal de clientes de Comercial Nazareth. El rep
 
 ## Integrantes
 
-| Integrante | Código |
-|---|---|
-| Marco Antonio Martell Alvarez | N00471929 |
-| Alejandro Horna Quezada | N00475530 |
-| Isaí Samuel Bejarano Benites | N00490010 |
-| Cesar Jeremin Alonso Chuquimango Reyes | N00480808 |
-| Alonso Castillo Davalos | N00491764 |
+- Marco Antonio Martell Alvarez
+- Alejandro Horna Quezada
+- Isaí Samuel Bejarano Benites
+- Cesar Jeremin Alonso Chuquimango Reyes
+- Alonso Castillo Davalos
 
 ## Versiones
 
@@ -65,4 +63,3 @@ El [informe de trazabilidad](reportes/trazabilidad-v2.0.md#trazabilidad-de-los-c
 ## Kanban
 
 [Tablero de Comercial Nazareth](https://trello.com/b/pG8s0HQ8/comercial-nazareth). En curso y En revisión admiten un máximo de dos tarjetas cada una. Las reglas contemplan capacidad, bloqueos, correcciones y criterios de cierre.
-

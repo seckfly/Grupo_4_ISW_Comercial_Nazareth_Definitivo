@@ -34,7 +34,7 @@
         <mxCell id="replenish" value="¿Stock &lt; mínimo&#10;y decide reponer?" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;shape=rhombus;fillColor=#ffffff;strokeColor=#687787;fontSize=17;spacing=6;" vertex="1" parent="1">
           <mxGeometry x="500" y="580" width="280" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="order" value="Ejecutar CU-008:&#10;registrar orden de compra.&#10;El stock no cambia" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;rounded=1;arcSize=15;fillColor=#eaf1fb;strokeColor=#7896bf;spacing=10;" vertex="1" parent="1">
+        <mxCell id="order" value="Ejecutar CU-008:&#10;guardar la orden pendiente.&#10;El stock no cambia" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;rounded=1;arcSize=15;fillColor=#eaf1fb;strokeColor=#7896bf;spacing=10;" vertex="1" parent="1">
           <mxGeometry x="945" y="590" width="300" height="100" as="geometry" />
         </mxCell>
         <mxCell id="order-end" value="" style="whiteSpace=wrap;html=1;fontFamily=Arial;fontSize=18;fontColor=#17212f;strokeWidth=2;shape=ellipse;fillColor=#ffffff;strokeColor=#25364a;" vertex="1" parent="1">

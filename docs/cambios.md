@@ -7,7 +7,7 @@
 | CR-003 · Compra con recepción inmediata | v2.0 | [#10](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/10) | [#7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/7) | [RF-005, BR-004 y BR-008](SRS.md), [CU-008 y CU-009](CU.md) y [PRU-006 y PRU-008](../pruebas/pruebas.md). |
 | CR-004 · Comprobación de Yape y Plin | v2.0 | [#11](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/issues/11) | [#7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/7) | [RF-001 y BR-001](SRS.md), [CU-001](CU.md) y [PRU-020](../pruebas/pruebas.md). |
 
-El PR #7 sincronizó la documentación de compras y pagos. Los escenarios de prueba detallan los resultados esperados de ambos cambios.
+El [PR #7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/7) sincronizó la documentación de compras y pagos. El [PR #14](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/pull/14) enlazó ambos cambios con el SRS, la matriz y las pruebas.
 
 ## Evaluación de los cambios
 

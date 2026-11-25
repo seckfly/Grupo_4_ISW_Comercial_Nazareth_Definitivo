@@ -41,7 +41,7 @@ La matriz reúne los 15 requisitos funcionales, los seis no funcionales y las oc
 | BR-002 | Precio y redondeo; descuento concordante | PRU-003, PRU-010 |
 | BR-003 | Venta sin cliente asociado | PRU-004 |
 | BR-004 | El stock aumenta al confirmar la recepción | PRU-006, PRU-008 |
-| BR-005 | Separación sin venta ni descuento de stock | PRU-011 |
+| BR-005 | Separación sin venta ni bloqueo de existencias | PRU-011 |
 | BR-006 | Alerta por umbral y decisión de reponer | PRU-002, PRU-006 |
 | BR-007 | Proveedor guardado en la orden | PRU-005 |
 | BR-008 | Recepción parcial y rechazo de duplicados o exceso | PRU-008 |
