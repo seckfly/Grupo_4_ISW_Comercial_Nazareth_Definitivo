@@ -36,4 +36,4 @@ Los tres archivos representan el mismo flujo. La consulta conserva las reglas de
 | RF-002 | CU-006 | CLS-Producto | PRU-002 |
 | RF-015 | CU-006 | CLS-Producto, CLS-MovimientoInventario | PRU-016, PRU-017, PRU-018, PRU-019 |
 
-PRU-016 describe ajustes con motivos válidos y conservación del historial. PRU-017 y PRU-018 cubren motivos vacíos o compuestos solo por espacios. PRU-019 define el resultado esperado ante un fallo durante el guardado del ajuste.
+PRU-016 describe ajustes con motivos válidos, la conservación del historial y el rechazo de un ajuste que dejaría stock negativo. PRU-017 y PRU-018 cubren motivos vacíos o compuestos solo por espacios. PRU-019 define el resultado esperado ante un fallo durante el guardado del ajuste.

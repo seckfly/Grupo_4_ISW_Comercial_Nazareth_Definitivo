@@ -71,7 +71,7 @@ Para RNF-001 se consideran diez operaciones equivalentes, todas bajo el umbral. 
 | BR-002 | La venta usa el precio consultado por el servicio y redondea a dos decimales. El cálculo de descuentos debe coincidir entre interfaz y backend. |
 | BR-003 | Una venta puede registrarse sin cliente asociado. |
 | BR-004 | El stock aumenta al confirmar la recepción. Una orden pendiente conserva las existencias. Si la mercadería ya llegó, la compra y la recepción pueden guardarse juntas. |
-| BR-005 | Una solicitud de separación no confirma una venta ni garantiza el bloqueo de existencias. |
+| BR-005 | Una solicitud de separación no confirma una venta ni bloquea existencias. |
 | BR-006 | La alerta muestra stock menor o igual al mínimo. CU-008 puede extender CU-006 cuando el stock está por debajo del mínimo y Humberto decide reponer. Si el stock equivale al mínimo, se muestra la alerta, pero esa condición por sí sola no activa CU-008. |
 | BR-007 | Los datos del proveedor se guardan en la orden. El proveedor no tiene credenciales ni un caso de uso independiente. |
 | BR-008 | Una recepción parcial mantiene pendiente la orden y acumula cantidades recibidas. Se rechazan referencias duplicadas y cantidades superiores al saldo por recibir. |

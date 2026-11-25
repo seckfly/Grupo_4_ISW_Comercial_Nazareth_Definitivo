@@ -48,11 +48,11 @@ El [registro de cambios](docs/cambios.md) enlaza los Issues, los PR y la evidenc
 
 La [matriz](matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del negocio del SRS. Los 23 casos de [pruebas.md](pruebas/pruebas.md) cubren el catálogo de requisitos. El modelo disponible tiene seis clases vinculadas con cinco RF. La [hoja de cálculo](reportes/trazabilidad-v2.0.xlsx) calcula la cobertura y comprueba los vínculos entre requisitos y pruebas.
 
-El [informe de trazabilidad](reportes/trazabilidad-v2.0.md#trazabilidad-de-los-cambios) muestra cómo se verifica cada cambio de la entrega.
+El [informe de trazabilidad](reportes/reporte-v2.0.md#trazabilidad-de-los-cambios) muestra cómo se verifica cada cambio de la entrega.
 
 ## Reportes
 
-- [Trazabilidad v2.0](reportes/trazabilidad-v2.0.md) y [Excel](reportes/trazabilidad-v2.0.xlsx).
+- [Reporte v2.0](reportes/reporte-v2.0.md) y [Excel](reportes/trazabilidad-v2.0.xlsx).
 - [Comparación de v1.0 y v1.1](reportes/reporte-v1.1.md), con el detalle del CR-001.
 
 ## Evaluación de los cambios

@@ -1,6 +1,6 @@
-# Trazabilidad de Comercial Nazareth · v2.0
+# Reporte de trazabilidad de Comercial Nazareth (v2.0)
 
-La [matriz](../matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del [SRS](../docs/SRS.md). La [hoja de cálculo](trazabilidad-v2.0.xlsx) calcula los totales y comprueba los vínculos con [pruebas.md](../pruebas/pruebas.md).
+La [matriz](../matrices/trazabilidad.md) reúne los 15 RF, los seis RNF y las ocho reglas del [SRS](../docs/SRS.md). La [hoja de cálculo](trazabilidad-v2.0.xlsx) calcula la cobertura documental y comprueba los vínculos entre requisitos y pruebas con los datos de sus propias hojas. El [catálogo de pruebas](../pruebas/pruebas.md) describe los escenarios y resultados esperados.
 
 | Medida | Resultado |
 |---|---:|
@@ -18,9 +18,9 @@ Las pruebas registran escenarios y resultados esperados. La cobertura de pruebas
 
 | CR | Versión de incorporación | Requisito, proceso o regla | Evidencia de verificación |
 |---|---|---|---|
-| CR-001 · Motivo obligatorio en ajustes | v1.1 | REQ-015, identificado como RF-015 en v2.0, [CU-006](../docs/CU.md#cu-006-gestionar-inventario) y CLS-MovimientoInventario. La matriz de v2.0 también vincula RF-015 con CLS-Producto. | [PRU-016 a PRU-018](../pruebas/pruebas.md) documentan el motivo válido, vacío y formado solo por espacios. La v2.0 añade PRU-019, que cubre el fallo de guardado. |
+| CR-001 · Motivo obligatorio en ajustes | v1.1 | REQ-015, identificado como RF-015 en v2.0, [CU-006](../docs/CU.md#cu-006-gestionar-inventario) y CLS-MovimientoInventario. La matriz de v2.0 también vincula RF-015 con CLS-Producto. | [PRU-016 a PRU-018](../pruebas/pruebas.md) documentan el ajuste con motivo válido, el rechazo por stock negativo y el rechazo de motivos vacíos o formados solo por espacios. La v2.0 añade PRU-019, que cubre el fallo de guardado. |
 | CR-002 · Límites de concurrencia en Kanban | v2.0 | [Reglas de movimiento y capacidad](../docs/agilidad.md#reglas-de-concurrencia). En curso y En revisión admiten dos tarjetas cada una, incluidas las bloqueadas. | Las listas En curso y En revisión del [tablero Kanban](https://trello.com/b/pG8s0HQ8/comercial-nazareth) muestran el límite. La [tarjeta del CR-002](https://trello.com/c/M6iVRmxI) reúne los criterios de revisión. |
-| CR-003 · Compra con recepción inmediata | v2.0 | RF-005, BR-004 y BR-008, [CU-008](../docs/CU.md#cu-008-registrar-orden-de-compra) y [CU-009](../docs/CU.md#cu-009-gestionar-compras-recepción-de-mercadería). | [PRU-006 y PRU-008](../pruebas/pruebas.md) describen la orden pendiente y su anulación, la recepción inmediata y parcial, el rechazo de referencias repetidas o cantidades mayores al saldo y la reversión ante un fallo de guardado. |
+| CR-003 · Compra con recepción inmediata | v2.0 | RF-005, BR-004 y BR-008, [CU-008](../docs/CU.md#cu-008-registrar-orden-de-compra) y [CU-009](../docs/CU.md#cu-009-gestionar-compras-recepción-de-mercadería). | [PRU-006 y PRU-008](../pruebas/pruebas.md) describen la orden pendiente y su anulación, la recepción inmediata y parcial, el rechazo de referencias repetidas o cantidades mayores al saldo y la reversión ante fallos de guardado tanto en la recepción contra una orden pendiente como en la compra con recepción inmediata. |
 | CR-004 · Comprobación de Yape y Plin | v2.0 | RF-001, BR-001 y [CU-001](../docs/CU.md#cu-001-registrar-venta). | [PRU-020](../pruebas/pruebas.md) documenta el importe exacto, la comprobación manual del abono y los rechazos correspondientes. |
 
 La columna «Último CR» de la [matriz de trazabilidad](../matrices/trazabilidad.md#requisitos-funcionales) relaciona RF-015, RF-005 y RF-001 con sus cambios. PRU-006 complementa al CR-003 con el escenario de orden pendiente, vinculado a RF-004. El CR-002 se sigue desde las tarjetas del tablero y las reglas de concurrencia.

@@ -13,4 +13,4 @@ El [PR #7](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo/
 
 - [Matriz de impacto](../matrices/impacto-cambios.md)
 - [Matriz de riesgos](../matrices/riesgos-cambios.md)
-- [Trazabilidad de los cuatro cambios](../reportes/trazabilidad-v2.0.md#trazabilidad-de-los-cambios)
+- [Trazabilidad de los cuatro cambios](../reportes/reporte-v2.0.md#trazabilidad-de-los-cambios)
