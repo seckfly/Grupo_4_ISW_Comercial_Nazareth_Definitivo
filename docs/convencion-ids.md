@@ -9,6 +9,7 @@
 | Clase | CLS-Nombre | CLS-Venta |
 | Prueba | PRU-### | PRU-001 |
 | Solicitud de cambio | CR-### | CR-001 |
+| Riesgo | R-## | R-01 |
 
 Cada ID identifica un elemento. Si su contenido cambia, conserva el ID; un identificador retirado no se asigna a otro elemento. RF-001 a RF-015 y RNF-001 a RNF-006 corresponden al [SRS](SRS.md). Los 23 casos de [pruebas](../pruebas/pruebas.md) usan una secuencia continua, PRU-001 a PRU-023.
 
