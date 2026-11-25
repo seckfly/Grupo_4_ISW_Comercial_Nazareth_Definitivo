@@ -41,7 +41,7 @@
         <mxCell id="CU-004" value="&lt;b&gt;CU-004&lt;/b&gt;&lt;br&gt;Gestionar promociones" style="html=1;whiteSpace=wrap;ellipse;fillColor=#e7f0fc;strokeColor=#587da5;strokeWidth=1.7;fontColor=#182b40;fontSize=17;" parent="1" vertex="1">
           <mxGeometry x="317" y="706" width="260" height="82" as="geometry" />
         </mxCell>
-        <mxCell id="CU-007" value="&lt;b&gt;CU-007&lt;/b&gt;&lt;br&gt;Administrar accesos" style="html=1;whiteSpace=wrap;ellipse;fillColor=#e7f0fc;strokeColor=#587da5;strokeWidth=1.7;fontColor=#182b40;fontSize=17;" parent="1" vertex="1">
+        <mxCell id="CU-007" value="&lt;b&gt;CU-007&lt;/b&gt;&lt;br&gt;Gestionar credenciales" style="html=1;whiteSpace=wrap;ellipse;fillColor=#e7f0fc;strokeColor=#587da5;strokeWidth=1.7;fontColor=#182b40;fontSize=17;" parent="1" vertex="1">
           <mxGeometry x="317" y="810" width="260" height="82" as="geometry" />
         </mxCell>
         <mxCell id="CU-003" value="&lt;b&gt;CU-003&lt;/b&gt;&lt;br&gt;Consultar catálogo" style="html=1;whiteSpace=wrap;ellipse;fillColor=#e7f0fc;strokeColor=#587da5;strokeWidth=1.7;fontColor=#182b40;fontSize=17;" parent="1" vertex="1">
