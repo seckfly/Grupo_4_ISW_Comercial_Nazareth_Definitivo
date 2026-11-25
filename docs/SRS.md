@@ -84,4 +84,4 @@ El cálculo de descuentos debe coincidir entre la interfaz y el servicio. En los
 
 La [matriz](../matrices/trazabilidad.md) relaciona los quince RF, los seis RNF y las ocho reglas con los [casos de uso](CU.md), el modelo disponible y los [23 casos de prueba](../pruebas/pruebas.md). Once RF se vinculan con casos de uso; los otros cuatro se identifican por su ámbito en el SRS. Las pruebas describen escenarios y resultados esperados.
 
-El [diagrama de casos de uso](../modelos/casos-de-uso.svg) representa los nueve CU. El [modelo de clases](../modelos/clases.png) contiene seis clases vinculadas con cinco RF. El [proceso crítico](proceso-critico.md) desarrolla CU-006.
+El [diagrama de casos de uso](../modelos/casos-de-uso.png) ([SVG](../modelos/casos-de-uso.svg)) representa los nueve CU. El [modelo de clases](../modelos/clases.png) contiene seis clases vinculadas con cinco RF. El [proceso crítico](proceso-critico.md) desarrolla CU-006.

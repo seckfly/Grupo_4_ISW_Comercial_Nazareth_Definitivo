@@ -14,9 +14,9 @@ Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado ut
 | CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 y, con recepción inmediata, RF-005 |
 | CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-004, RF-005 |
 
-![Diagrama general de casos de uso](../modelos/casos-de-uso.svg)
+![Diagrama general de casos de uso](../modelos/casos-de-uso.png)
 
-[Archivo editable del diagrama](../modelos/casos-de-uso.drawio).
+[Versión SVG](../modelos/casos-de-uso.svg) · [Archivo editable del diagrama](../modelos/casos-de-uso.drawio).
 
 ## CU-001: Registrar venta
 
