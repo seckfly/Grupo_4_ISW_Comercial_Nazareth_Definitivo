@@ -8,7 +8,7 @@ Humberto Dávalos es el propietario y único trabajador del negocio y desempeña
 | REQ-002 | El sistema debe mostrar las existencias y señalar los productos activos cuyo stock sea menor o igual al mínimo configurado. |
 | REQ-007 | El sistema debe permitir buscar productos por nombre y categoría, mostrar su precio y disponibilidad, y guardar favoritos y listas en el portal del cliente registrado. |
 | REQ-010 | El sistema debe permitir vincular un cliente registrado a la venta cuando el comprador se identifique y registrar la venta sin cliente asociado cuando no se identifique. |
-| REQ-015 | El sistema debe permitir registrar y actualizar productos, precios y stock inicial, y realizar ajustes autorizados de existencias conservando su historial. |
+| REQ-015 | El sistema debe permitir registrar productos con su precio y stock inicial, actualizar el precio de productos existentes y realizar ajustes autorizados de existencias conservando su historial. |
 
 ## Reglas aplicables
 
