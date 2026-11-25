@@ -2,7 +2,7 @@
 
 La versión indicada es la primera que incorporó cada cambio. El [registro de cambios](../docs/cambios.md) enlaza sus Issues y pull requests.
 
-| Cambio | Versión de incorporación | Alcance y elementos afectados | Tiempo o esfuerzo | Efecto y verificación |
+| Cambio | Versión de incorporación | Alcance y elementos afectados | Aplicación del cambio | Efecto y verificación |
 |---|---|---|---|---|
 | [CR-001](../docs/cambios.md) · Motivo obligatorio en ajustes | v1.1 | RF-015, CU-006 y CLS-MovimientoInventario. El modelo incorpora `motivo` y `validarMotivo`, y `registrarAjuste` recibe el motivo. | La estimación original fue de 2 horas para actualizar la documentación y el modelo y revisar sus vínculos. | Guarda el ajuste, su motivo y el stock en una sola transacción. El alcance original pasó de 6 a 8 pruebas documentadas. PRU-016 a PRU-018 cubren la aceptación y el rechazo del motivo. |
 | [CR-002](../docs/cambios.md) · Límites de concurrencia en Kanban | v2.0 | Cambia las reglas del equipo para iniciar, revisar y devolver tarjetas. En curso y En revisión admiten dos tarjetas cada una. | Si la columna de destino está llena, la tarjeta espera en su columna actual. El equipo prioriza liberar espacio antes de iniciar más trabajo. | Cada tarjeta bloqueada cuenta para su límite y las tarjetas terminadas conservan su evidencia. Las [reglas de concurrencia](../docs/agilidad.md#reglas-de-concurrencia) y el tablero permiten comprobar el cambio. |
