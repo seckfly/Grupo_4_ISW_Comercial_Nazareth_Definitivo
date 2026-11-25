@@ -10,7 +10,7 @@ Humberto Dávalos desempeña los cuatro roles internos; el cliente registrado ut
 | CU-004 | Gestionar promociones | Administrador | RF-008 |
 | CU-005 | Reservar producto (Separación en tienda) | Cliente registrado | RF-007, RF-009 |
 | CU-006 | Gestionar inventario | Responsable de almacén | RF-002, RF-015 |
-| CU-007 | Administrar accesos | Administrador | RF-013 |
+| CU-007 | Gestionar credenciales | Administrador | RF-013 |
 | CU-008 | Registrar orden de compra | Responsable de compras | RF-003, RF-004, RF-007 y, con recepción inmediata, RF-005 |
 | CU-009 | Gestionar compras (Recepción de mercadería) | Responsable de compras | RF-004, RF-005 |
 
@@ -206,7 +206,7 @@ El [CR-001](https://github.com/seckfly/Grupo_4_ISW_Comercial_Nazareth_Definitivo
 
 El [proceso crítico](proceso-critico.md) presenta el flujo de CU-006 y sus controles.
 
-## CU-007: Administrar accesos
+## CU-007: Gestionar credenciales
 
 Actor: Administrador, rol desempeñado por Humberto Dávalos.
 
